@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Once Newyorker</title>
+    <link rel="shortcut icon" href="../img/favi.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/detail_page2.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">
+    <style>
+        body {background-color: #f2f2f2;}
+        .tool_period {margin-top: 400px;}
+        .title {margin-bottom: 95px;}
+    </style>
+    <link rel="stylesheet" href="../css/jquery.modally2.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/inobounce/0.2.0/inobounce.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.modally.js"></script>
+    
+</head>
+
+<body> 
+   
+   <header>
+        <div class="home"><a href="../index.html"><img src="../img/pG2_03.png" alt="home button"></a></div>
+        <div class="total"><a href="total2.html"><img src="../img/pG2_06.png" alt="close button"></a></div>
+    </header>
+   
+   
+    <div id="carousel">
+        <div id="slides">
+            <ul>
+                <li class="slide">
+                    <div class="quoteContainer">
+                        <div class="nums"><img src="../img/p202.png" alt="no.2"></div>
+                        <div class="mywork">
+                            <p class="title">EXPERIENCE<br>MY<br>REBRANDING DESIGN</p>
+                            <p class="txt"><span>FLOWERSSOM</span><br>- This rebranding web is inspired by flower shop "KUKKA". It is a online flower shop with class available in online and offline also.</p>
+                            <button><a href="#lorem" target="_modal" class="button white">MORE</a></button>
+                        </div>
+                        <div class="frame">
+                            <div class="eye"><a href="http://hyokimny.dothome.co.kr/project/" target="_blank"><img src="../img/pG2_07.png" alt="web" title="move to web"></a></div>
+                            <div class="mockup"><img src="../img/pG2-701_11.jpg" alt="flowerssome mockup"></div>
+                        </div>
+                        <div class="tool_period">
+                            <div class="period"><span>PERIOD</span><br>- 40hrs</div>
+                            <div class="tool"><span>TOOL</span><br>- Illustrator <br>- Photoshop <br>- HTML5<br>- CSS3 <br>- JQuery</div>
+                        </div>
+                    </div>
+                    
+                
+            </ul>
+        </div>
+        
+        
+        <!--        lightbox-->
+        <div id="lorem" style="display:none" class="modally-init" modally-max-width="1280">
+            <img src="../img/flower.jpg" alt="flowerssom styleguide" width="100%">
+            <div class="button-wrap">
+                <a target="_modal:close" class="button small">Close me!</a>
+            </div>
+        </div>
+        
+        <div class="btn-bar">
+            <div id="buttons">
+                <a id="prev" href="pg6.html">&lt;</a> 
+                <a id="next" href="pg8.html">&gt;</a> 
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--lightbox-->
+    <script type="text/javascript">
+            jQuery(document).ready(function() {
+                $('#ipsum').modally('ipsum', {'max-width': 800});
+                //$('#lorem').modally();
+                $('#dolor').modally();
+                modally('video-modal', {video: true, 'max-width': 800});
+            });
+    </script>  
+</body>
+
+</html>

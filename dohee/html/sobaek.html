@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIM DO HEE</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="../css/sobaek.css">
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/font-kopub@1.0/kopubdotum.min.css'>
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <div id="artwork_bg">
+        <div class="nav">
+            <ul class="gnb">
+                <li><a href="../index.html">HOME</a></li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li class="underbar">
+                    <a href="work.html">WORK</a>
+                    <ul class="dropdown">
+                        <li><a href="artwork.html">GRAPHIC</a></li>
+                        <li><a href="web_mail.html">WEB</a></li>
+                        <li><a href="kiehl.html">WEB SITE</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="contents">
+            <div class="main_title">
+                <h1>WEB SITE</h1>
+            </div>
+            <div class="main_txt">
+                <h2>Sobaek Gallery Site</h2>
+                <p>소백 갤러리</p>
+                <a href="../sobaek/index.html" target="_blank"><button class="btn">
+                Go To Site</button></a>
+            </div>
+            <div class="main_img">
+                <a href="../sobaek/index.html" target="_blank"><img src="../img/SOBAEK_01.jpg" alt=""></a>
+                
+            </div>
+            <div class="sub_txt">
+                <h3>Analysis</h3>
+                <p>저의 아이덴티티를 담은 프로젝트 ‘소백 갤러리’입니다.<br>
+                    제 전공은 방송미디어과이며 영상, 기획, 촬영, 디자인, 조명 등을 배웠습니다. <br>
+                    그 중 촬영과 디자인을 좋아해서 졸업 후
+                    여러 분야의 스튜디오를 다니면서<br> 사진을 보는 눈을 넓혀갔습니다.<br>
+                    흑백 사진이 주는 매력과 깊이를 다른 이도 느끼길 바라는 마음으로<br>흑백 사진 전문 갤러리를 제작하였습니다.
+                </p>
+            </div>
+            <div class="line"></div>
+            <div class="txt_line"></div>
+            <div class="center_line"></div>
+            <div class="center_circle"></div>
+            <div class="line_02"></div>
+            
+            <div class="detail_txt">
+                <h2>Sobaek Gallery Detailed</h2>
+            </div>
+        </div>
+            <div class="detail_img">
+                <img src="../img/SOBAEK_02.jpg" alt="">
+            </div>
+        <!--contents-->
+        
+        <div class="arrow_icon">
+            <div class="arrow_01">
+                <a href="kiehl.html"><span class="material-icons md-48 color">&#xe5e0;</span></a>
+            </div>
+            <div class="arrow_02">
+                <a href="delta_air.html"><span class="material-icons md-48 color">&#xe5e1;</span></a>
+            </div>
+        </div>
+        
+         <div id="footer">
+            <p>© 2021 KIM DO HEE Portfolio |  All rights reserved.</p>
+        </div>
+        <!--footer-->
+        
+        <div id="top_icon">
+            <a href="#artwork_bg" class="top_btn">
+            <img src="../img/arrow.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!--artwork_bg-->
+
+<script type="text/javascript">
+ $(document).ready(function() {
+    $("a.top_btn").anchorAnimate()
+ });
+ jQuery.fn.anchorAnimate = function(settings) {
+    settings = jQuery.extend({
+    speed : 500
+    }, settings);    
+    return this.each(function(){
+    var caller = this
+    $(caller).click(function (event) {    
+    event.preventDefault()
+    var locationHref = window.location.href
+    var elementClick = $(caller).attr("href")
+    var destination = $(elementClick).offset().top;
+    $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() 
+    {
+    window.location.hash = elementClick
+    });
+     return false;
+    })
+    })
+ }
+</script>
+
+</body>
+</html>

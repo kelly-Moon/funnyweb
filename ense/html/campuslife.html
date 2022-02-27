@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>leeeunse</title>
+	<link rel="stylesheet" href="../css/campuslife.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="../css/cssfont/font.css">
+	<link rel="shortcut icon" href="../img/favicon.ico">
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="header">
+			<a href="../index.html"><img src="../img/logo2.png" alt="logo"></a>
+			<ul id="menu">
+				<li><a href="about.html">About</a></li>
+				<li><a href="works1.html">Works1</a></li>
+				<li><a href="works2.html">Works2</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+
+<!------------------------------------------->
+
+		<div class="box">
+			<div class="sub_menu">
+				<ul>
+					<li><a href="campuslife.html">illust graphic poster</a></li>
+					<li><a href="collage.html">collage artwork</a></li>
+					<li><a href="vans.html">magazine ad</a></li>
+					<li><a href="book.html">book design</a></li>
+					<li><a href="ksj.html">graduation exhibition</a></li>
+				</ul>
+			</div>
+			<button onclick="myFunction()"></button>
+
+			<div class="campuslife"><img src="../img/campuslife.jpg" alt="campuslife"></div>
+
+		</div>
+
+		<div class="info_box" id="demo">
+			<button class="x" onclick="myFunction2()">x</button>
+			<ul>
+				<li class="name"><span>Illust Graphic Poster</span>_1191 x 1684 pixel</li>
+				<li class="date">2016. 06.</li>
+				<li class="line">ㅡ</li>
+				<li class="name2">MY CAMPUS LIFE</li>
+				<li class="info">1학년 때의 학교생활을 드로잉으로 표현해 그래픽포스터로 완성한 작업이다.</li>
+			</ul>
+		</div>
+
+<!--------------------------------------->
+
+		<div id="footer">
+			copyright &copy; 2018 eunselee. All rights reserved.
+		</div>
+	</div>
+
+	<script>
+		function myFunction() {
+    	document.getElementById("demo").style.display = "block";
+		}
+	</script>
+	<script>
+		function myFunction2() {
+    	document.getElementById("demo").style.display = "none";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>51.75Hz : IN A's Portfolio</title>
+<meta name="author" content="youina">
+<meta name="description" content="ina's portfolio">
+ <meta name="keyword" content="웹퍼블리셔,웹표준,웹접근성,portfolio,web design,web publisher">
+<link rel="shortcut icon" href="../img/icon/sub_main_contact_whale.ico">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto" rel="stylesheet">
+<link rel="stylesheet" href="../css/reset.css" type="text/css">
+<link rel="stylesheet" href="../css/style_sub_work_nav.css" type="text/css">
+<link rel="stylesheet" href="../css/style_sub_work03.css" type="text/css">
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div id="nav">
+				<ul class="design">
+					<li class="work01">
+						<a href="sub_work01.html">
+							<div class="circle"></div>
+							<span>Illustrator</span>
+						</a>
+					</li>
+					<li class="work02">
+						<a href="sub_work02.html">
+							<div class="circle"></div>
+							<span>Banner</span>
+						</a>
+					</li>
+					<li class="work03">
+						<a href="sub_work03.html">
+							<div class="circle"></div>
+							<span>Event Page</span>
+						</a>
+					</li>
+					<li class="work04">
+						<a href="sub_work04.html">
+							<div class="circle"></div>
+							<span>Webmail</span>
+						</a>
+					</li>
+					<li class="work05">
+						<a href="sub_work05.html">
+							<div class="circle"></div>
+							<span>Promotion Site</span>
+						</a>
+					</li>
+				</ul>
+				<div class="home">
+					<a href="sub_main.html#section3">
+						<img src="../img/icon/sub_work_whale.png" alt="whale home button">
+					</a>
+				</div>
+				<ul class="publishing">
+					<li class="work06">
+						<a href="sub_work06.html">
+							<div class="circle"></div>
+							<span>Coding</span>
+						</a>
+					</li>
+					<li class="work07">
+						<a href="sub_work07.html">
+							<div class="circle"></div>
+							<span>ReDesign</span>
+						</a>
+					</li>
+					<li class="work08">
+						<a href="sub_work08.html">
+							<div class="circle"></div>
+							<span>Project</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- //nav -->
+		</div>
+		<!-- //header -->
+		<a id="move_top" href="#">
+			<img src="../img/icon/upwards-arrow.png" alt="move top button">
+		</a>
+		<div id="container">
+			<div class="title_box">
+				<div class="title_figure_small title_figure"></div>
+				<div class="title_figure_big title_figure"></div>
+				<span class="work_title">Event Page</span>
+			</div>
+			<!-- //title_box -->
+			<div class="sub_title_box">
+				<span class="sub_title">텐바이텐 키덜트 특별전 이벤트</span>
+			</div>
+			<!-- //sub_title_box -->
+			<div class="description_box">
+				<p class="description">디자인제품과 키덜트 제품이 많은 텐바이텐의 특성에서 착안하여<br>5월 어린이날 컨셉의 키덜트 특별전 이벤트를 기획하였습니다.<br>디자인 역시 알록달록하고 귀여운 면을 강조하여 디자인하였습니다.</p>
+			</div>
+			<!-- //description_box -->
+			<div class="contents_box">
+				<div class="work03_contents"></div>
+				<!-- //work02_box -->
+			</div>
+			<!-- //contents_box -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- // wrap-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script>
+
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                $('#move_top').fadeIn();
+            } else {
+                $('#move_top').fadeOut();
+            }
+        });
+        $("#move_top").click(function() {
+            $('html, body').animate({
+                scrollTop : 0
+            }, 400);
+            return false;
+        });
+    });
+
+    </script>
+</body>
+</html>

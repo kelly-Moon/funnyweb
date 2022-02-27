@@ -1,0 +1,496 @@
+/* container */
+	.container {width:1600px; height: 100vh; margin:0 auto;
+	}
+/* contents */
+	
+	#contents > div {color:#0056e1;}
+	#contents > div h2 {font-family: 'Abril Fatface', cursive; font-size: 8em; font-weight: 700; color:#0056e1; letter-spacing: 12px;}
+	
+/*nav*/
+	#nav {position:fixed; width:141%; height:60px; z-index:2;}
+	#nav ul{height:20px; margin: 2.5% auto 0; text-align:center; line-height:20px;}
+	#nav ul li { display:inline; }
+	#nav ul li a {color:#0056e1; padding:0 10px; display:inline-block; font-family: 'Abril Fatface', cursive; font-size: 1.5em;}
+	#nav ul li.on a {text-decoration: underline;}
+	
+	
+.w_img {
+	width: 331px; height: 53px;
+	background-image: url(../images/water_index_02.jpg);
+	background-repeat: no-repeat;
+	margin-left: 5%;
+}
+
+	#section1 {position:absolute; width:100%; height:100vh;}
+	#section2 {position:absolute; width:100%; height:100vh; left:100%;}
+	#section3 {position:absolute; width:100%; height:100vh; left:200%;}
+	#section4 {position:absolute; width:100%; height:100vh; left:300%;}
+	#section5 {position:absolute; width:100%; height:100vh; left:400%; }
+
+/*.section1*/	
+.section1 {
+	position: relative;
+}
+.section1 h2 {
+	position: absolute; top: 235px; left: 215px;
+}
+.section1 img {
+	position: absolute; top: 140px; left: 428px;
+}
+
+.section1 p.def {
+	position: absolute; top: 400px; left: 215px;
+	font-size: 1.1em;
+	width: 21%;
+}
+.section1 p.big {
+	font-family: 'Abril Fatface', cursive;
+	text-decoration: underline;
+	position: absolute; top: 630px; left: 315px;
+	font-size: 1.5em; letter-spacing: 1.2px;
+}
+.barcode {
+	background-image: url(../images/water_index_11.jpg);
+	background-repeat: no-repeat;
+	width: 59px; height: 105px;
+	position: absolute; top: 371px; left: 1270px;
+}
+.vert {
+	writing-mode: vertical-rl;
+	width: 10%;
+	height: 235px;
+	font-size: 1.1em;
+	color: #6b8bbd;
+	position: absolute; top: 138px; left: 1170px;
+}
+.down {
+	position: absolute; top: 480px; left: 1170px;
+}
+/*.section2*/	
+.section2 {
+	margin: 0 auto;
+}
+.sec2_left {
+	width: 50%; height: 100vh;
+	float: left;
+	position: relative;
+}
+.sec2_left h3 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 7em;
+	letter-spacing: 16px;
+	line-height: 135px;
+	color: #fff;
+	text-shadow:-1px 0px #0056e1,1px 0px #0056e1,0px -1px #0056e1,0px 1px #0056e1;
+	position: absolute; top: 50px; left: 205px;
+	z-index: -1;
+}
+.sec2_left img {
+	position: absolute;
+	top: 161px; left: 257px;
+}
+
+.sec2_right {
+	width: 50%; height: 100vh;
+	float: left;
+}
+.sec2_right img {
+	margin-bottom: 18px;
+}
+.sec2_right h4 {
+	font-size: 1.8em;
+	font-weight: bold;
+}
+.sec2_right p.middle {
+	font-size: 1.6em;
+	font-weight: 500;
+}
+.sec2_right p {
+	font-size: 1.3em;
+	line-height: 24px;
+}
+.sec2_right .right01 {
+	float: left;
+	margin-left: 158px;
+	margin-right: 90px;
+	margin-top: 200px;
+	padding-left: 20px;
+	border-left: 1px solid #0056e1;
+}
+.sec2_right .right02 {
+	float: left;
+	margin-top: 200px;
+	padding-bottom: 29px;
+	padding-left: 20px;
+	border-left: 1px solid #0056e1;
+}
+.sec2_right .right03 {
+	clear: both; float: left;
+	margin-left: 178px;
+	margin-right: 75px;
+}
+.sec2_right .right04 {
+	float: left;
+}
+.w_img02 {
+	background-image: url(../images/profile_25.jpg);
+	background-repeat: no-repeat;
+	width: 340px; height: 39px;
+	position: absolute;
+	right: 50px; bottom: 20px;
+}
+
+/*.section3*/	
+.left_bg {
+	width: 513px;
+	margin: 0 auto;
+	padding: 80px 0;
+}
+.sec3_left {
+	width: 50%; height: 100vh;
+	float: left;
+	background-color: #0056e1;
+}
+.sec3_left h4 {
+	color: #fff;
+	font-family: 'Abril Fatface', cursive;
+	font-size: 4em;
+	letter-spacing: 5px;
+	text-align: center;
+	
+}
+.sec3_left p.wtitle01,p.wtitle02,p.wtitle03 {
+	color: #fff;
+	font-size: 1.6em;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+.sec3_left img {
+	padding-left: 20px;
+}
+.sec3_left .design01 {
+	float: left;
+	border-left: 1px solid #fff;
+	margin-right: 20px;
+
+	margin-top: 70px;
+}
+p.wtitle01 {
+	padding-top: 150px;
+}
+.sec3_left .design02 {
+	float: left;
+	border-left: 1px solid #fff;
+	margin-right: 20px;
+	margin-top: 70px;
+}
+p.wtitle02 {
+	padding-top: 30px;
+}
+.sec3_left .design03 {
+	float: left;
+	border-left: 1px solid #fff;
+	margin-top: 70px;
+}
+p.wtitle03 {
+	padding-top: 200px;
+}
+.gr01:hover .wtitle01 {
+	text-decoration: underline;
+}
+.gr01:hover .g01 {
+	opacity: 0.9;
+}
+.gr02:hover .wtitle02 {
+	text-decoration: underline;
+}
+.gr02:hover .g02 {
+	opacity: 0.9;
+}
+.gr03:hover .wtitle03 {
+	text-decoration: underline;
+}
+.gr03:hover .g03 {
+	opacity: 0.9;
+}
+
+/******sec3_right*****/
+.sec3_right {
+	width: 50%; height: 100vh;
+	float: left;
+}
+.right_bg {
+	width: 492px;
+	margin: 0 auto;
+	padding: 43px 0;
+}
+.sec3_right p.wtitle04,p.wtitle05,p.wtitle06 {
+	color: #0056e1;
+	font-size: 1.6em;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+.sec3_right img {
+	padding-left: 20px;
+}
+.sec3_right .design04 {
+	float: left;
+	border-left: 1px solid #0056e1;
+	margin-right: 20px;
+	margin-top: 184px;
+}
+p.wtitle04 {
+	padding-top: 130px;
+}
+.sec3_right .design05 {
+	float: left;
+	border-left: 1px solid #0056e1;
+	margin-right: 20px;
+	margin-top: 184px;
+}
+p.wtitle05 {
+	padding-top: 130px;
+}
+.sec3_right .design06 {
+	float: left;
+	border-left: 1px solid #0056e1;
+	margin-top: 184px;
+}
+p.wtitle06 {
+	padding-top: 80px;
+}
+.gr04:hover .wtitle04 {
+	text-decoration: underline;
+}
+.gr04:hover .g04 {
+	opacity: 0.8;
+}
+.gr05:hover .wtitle05 {
+	text-decoration: underline;
+}
+.gr05:hover .g05 {
+	opacity: 0.8;
+}
+.gr06:hover .wtitle06 {
+	text-decoration: underline;
+}
+.gr06:hover .g06 {
+	opacity: 0.7;
+}
+.w_img03 {
+	background-image: url(../images/portfolio_graphic_07.jpg);
+	background-repeat: no-repeat;
+	width: 377px; height: 78px;
+	position: absolute;
+	right: 50px; bottom: 10px;
+}
+
+
+/*.section4*/	
+.left_bg02 {
+	width: 433px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.sec4_left {
+	width: 50%; height: 100vh;
+	float: left;
+	background-color: #0056e1;
+}
+.sec4_left h4 {
+	color: #fff;
+	font-family: 'Abril Fatface', cursive;
+	font-size: 4em;
+	letter-spacing: 5px;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.sec4_left p.ptitle01,p.ptitle02 {
+	color: #fff;
+	font-size: 1.6em;
+	text-align: right;
+	padding-right: 30px;
+	margin-bottom: 20px;
+}
+.sec4_left img {
+	padding-right: 30px;
+}
+.sec4_left .publish01 {
+	float: left;
+	border-right: 1px solid #fff;
+	margin-right: 30px;
+
+	margin-top: 70px;
+}
+p.ptitle01 {
+	padding-top: 50px;
+}
+.sec4_left .publish02 {
+	float: left;
+	border-right: 1px solid #fff;
+	margin-top: 70px;
+}
+p.ptitle02 {
+	padding-top: 30px;
+}
+.pb01:hover .ptitle01 {
+	text-decoration: underline;
+}
+.pb01:hover .p01 {
+	opacity: 0.8;
+}
+.pb02:hover .ptitle02 {
+	text-decoration: underline;
+}
+.pb02:hover .p02 {
+	opacity: 0.8;
+}
+
+/********sec4_right*******/
+.right_bg02 {
+	width: 455px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.sec4_right {
+	width: 50%; height: 100vh;
+	float: left;
+}
+
+.sec4_right p.ptitle03,p.ptitle04 {
+	color: #0056e1;
+	font-size: 1.6em;
+	text-align: right;
+	padding-right: 30px;
+	margin-bottom: 20px;
+}
+.sec4_right img {
+	padding-right: 30px;
+}
+.sec4_right .publish03 {
+	float: left;
+	border-right: 1px solid #0056e1;
+	margin-right: 30px;
+	margin-top: 184px;
+}
+p.ptitle03 {
+	padding-top: 32px;
+}
+.sec4_right .publish04 {
+	float: left;
+	border-right: 1px solid #0056e1;
+	margin-top: 184px;
+}
+p.ptitle04 {
+	padding-top: 120px;
+}
+.pb03:hover .ptitle03 {
+	text-decoration: underline;
+}
+.pb03:hover .p03 {
+	opacity: 0.8;
+}
+.pb04:hover .ptitle04 {
+	text-decoration: underline;
+}
+.pb04:hover .p04 {
+	opacity: 0.8;
+}
+
+p.archive {
+	font-size: 7em;
+	font-family: 'Abril Fatface', cursive;
+	position: absolute;
+	right: 400px; bottom: 10px;
+}
+
+
+/*****section5*****/
+.sec5_left {
+	width: 50%; height: 100vh;
+	float: left;
+}
+.sec5_left .w_img05 {
+	background-image: url(../images/contact_00.jpg);
+	background-repeat: no-repeat;
+	width: 40.25%; height: 314px;
+	margin-top: 260px;
+	float: left;
+}
+.sec5_left .contact_box {
+	width: 59.75%;
+	float: left;
+}
+.contact_box .ctme {
+	width: 288px; height: 280px;
+	background-color: #0056e1;
+	margin-top: 80px; margin-left: 170px;
+}
+.ctme h5 {
+	color: #fff;
+	font-size: 2.5em;
+	font-weight: 500;
+	padding-left: 41px;
+	padding-top: 31px;
+}
+.ctme p.me, p.itsme {
+	color: #fff;
+	font-size: 1.7em;
+	padding-left: 41px;
+	padding-top: 7px;
+}
+p.itsme:hover {
+	text-decoration: underline;
+}
+
+.contact_box p.bbig {
+	font-family: 'Abril Fatface', cursive;
+	text-decoration: underline;
+	font-size: 1.5em;
+	margin-left: 170px;
+	margin-top: 60px;
+}
+.contact_box h3 {
+	color: #fff;
+	font-family: 'Abril Fatface', cursive;
+	font-size: 5.8em;
+	letter-spacing: 10px;
+	text-shadow:-1px 0px #0056e1,1px 0px #0056e1,0px -1px #0056e1,0px 1px #0056e1;
+	margin-left: 170px;
+	margin-top: 40px;
+}
+.contact_box .last {
+	width: 62%;
+	margin-left: 170px;
+	font-size: 1.1em;
+	color: #6b8bbd;
+}
+p.bbig:hover {
+	color: #000;
+}
+
+/****sec5_right****/
+.sec5_right {
+	width: 50%; height: 100vh;
+	float: left;
+	position: relative;
+}
+.sec5_right img {
+	position: absolute;
+	top: 130px; left: 150px;
+}
+.sec5_right p.able {
+	font-size: 4.6em;
+	font-family: 'Abril Fatface', cursive;
+	writing-mode: vertical-rl;
+	position: absolute;
+	top: 143px; right: 165px;
+	letter-spacing: 4px;
+}
+
+
+
+
+

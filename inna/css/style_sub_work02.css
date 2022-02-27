@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+#container .contents_box {width: 960px;}
+.work02_box {float: left;}
+.work02_01 {
+	width: 340px;height: 153px;
+	background-image: url(../img/work_02_banner/work_02_banner_01_endless_love.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.4);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.work02_02 {
+	width: 340px;height: 153px;
+	background-image: url(../img/work_02_banner/work_02_banner_02_moment.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.4);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.work02_03 {
+	width: 340px;height: 153px;
+	background-image: url(../img/work_02_banner/work_02_banner_03_eternity.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.4);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.work02_mockup1 {
+	width: 600px;height: 480px;
+	background-image: url(../img/work_02_banner/work_02_banner_mockup1_banner02.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	float: left;
+	margin-left: 20px;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.4);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+.work02_mockup2 {
+	width: 960px;height: 720px;
+	background-image: url(../img/work_02_banner/work_02_banner_mockup2_banner01.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	float: left;
+	margin-bottom: 100px;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.4);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

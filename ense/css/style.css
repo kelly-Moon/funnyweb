@@ -1,0 +1,197 @@
+/*reset*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button{
+ margin:0;
+ padding:0;
+ border:none; 
+}
+body{
+ font-family:'Noto Sans KR';
+ font-size:14px; background-color: #fff; background-image: url(../img/sec4.jpg);
+}
+li{
+ list-style:none;
+}
+a{
+ color:#000;
+ text-decoration:none; 
+}
+img{
+ vertical-align:top;
+}
+img,fieldset,iframe{
+ border:0 none;
+}
+
+
+#wrap { width: 1600px; height: 797px; margin: 0 auto; position: relative;}
+/*header*/
+#header { width: 100%; overflow: hidden; }
+#header img { margin-left: 68px; margin-top: 40px; float: left;}
+#menu { overflow: hidden; width: 463px; height: 37px; margin-left: 577px; margin-top: 61px;}
+#menu li { float: left; }
+#menu li a { font-size: 18px; color: #0000fe; font-family: 'Noto Sans', sans-serif; margin-right: 73px;}
+#menu li:last-child a { margin-right: 0; }
+/**header**/
+
+#name { font-size: 20px; color: #0000fe; font-family: 'Noto Sans', sans-serif; width: 463px; height: 37px; margin: 0 auto; margin-top: 84px; text-align: center; letter-spacing: 17px;}
+
+#n1 { animation-name: one;
+			animation-duration: 5s;
+			position: absolute; left: 100px; top: 200px;
+			 }
+	@keyframes one {
+			0% {left: 100px; top: 200px;
+			transform: rotate(0deg);}
+			50% {left: 20px; top: 300px; transform: rotate(30deg);}
+			70% {left: 500px; top: 100px;}
+			80% {left: 700px; top: 350px;}
+			100% {left: 100px; top: 200px;}
+			}
+#n3 { animation-name: two;
+			animation-duration: 5s;
+			position: absolute; left: 155px; top: 240px;
+			 }
+	@keyframes two {
+			0% {left: 155px; top: 240px;
+			}
+			50% {left: 400px; top: 600px; transform: rotate(110deg);}
+			70% {left: 1300px; top: 100px;}
+			80% {left: 900px; top: 600px;}
+			100% {left: 155px; top: 240px;}
+			}
+#n5 { animation-name: three;
+			animation-duration: 5s;
+			position: absolute; left: 430px; top: 200px;
+			 }
+	@keyframes three {
+			0% {left: 430px; top: 200px;
+			}
+			50% {left: 1000px; top: 200px; transform: rotate(60deg);}
+			70% {left: 800px; top: 500px;}
+			80% {left: 200px; top: 400px;}
+			100% {left: 430px; top: 200px;}
+			}
+#n2 { animation-name: four;
+			animation-duration: 5s;
+			position: absolute; left: 564px; top: 284px;
+			 }
+	@keyframes four {
+			0% {left: 564px; top: 284px;
+			}
+			50% {left: 1400px; top: 500px; transform: rotate(230deg);}
+			70% {left: 800px; top: 500px;}
+			80% {left: 100px; top: 100px;}
+			100% {left: 564px; top: 284px;}
+			}
+#n4 { animation-name: five;
+			animation-duration: 5s;
+			position: absolute; left: 619px; top: 324px;
+			 }
+	@keyframes five {
+			0% {left: 619px; top: 324px;
+			}
+			50% {left: 700px; top: 100px; transform: rotate(180deg);}
+			70% {left: 200px; top: 600px;}
+			80% {left: 1100px; top: 100px;}
+			100% {left: 619px; top: 324px;}
+			}
+#n8 { animation-name: six;
+			animation-duration: 5s;
+			position: absolute; left: 569px; top: 554px;
+			 }
+	@keyframes six {
+			0% {left: 569px; top: 554px;
+			}
+			50% {left: 200px; top: 70px; transform: rotate(60deg);}
+			70% {left: 500px; top: 400px;}
+			80% {left: 700px; top: 600px;}
+			100% {left: 569px; top: 554px;}
+			}
+#n10 { animation-name: seven;
+			animation-duration: 5s;
+			position: absolute; left: 609px; top: 614px;
+			 }
+	@keyframes seven {
+			0% {left: 609px; top: 614px;
+			}
+			50% {left: 100px; top: 600px; transform: rotate(180deg);}
+			70% {left: 150px; top: 300px;}
+			80% {left: 1050px; top: 450px;}
+			100% {left: 609px; top: 614px;}
+			}
+#n6 { animation-name: eight;
+			animation-duration: 5s;
+			position: absolute; left: 645px; top: 745px;
+			 }
+	@keyframes eight {
+			0% {left: 645px; top: 745px;
+			}
+			50% {left: 500px; top: 400px; transform: rotate(200deg);}
+			70% {left: 700px; top: 50px;}
+			80% {left: 50px; top: 650px;}
+			100% {left: 645px; top: 745px;}
+			}
+#n12 { animation-name: nine;
+			animation-duration: 5s;
+			position: absolute; left: 916px; top: 292px;
+			 }
+	@keyframes nine {
+			0% {left: 916px; top: 292px;
+			}
+			50% {left: 800px; top: 600px; transform: rotate(140deg);}
+			70% {left: 1500px; top: 30px;}
+			80% {left: 350px; top: 350px;}
+			100% {left: 916px; top: 292px;}
+			}
+#n11 { animation-name: ten;
+			animation-duration: 5s;
+			position: absolute; left: 1093px; top: 289px;
+			 }
+	@keyframes ten {
+			0% {left: 1093px; top: 289px;
+			}
+			50% {left: 850px; top: 500px; transform: rotate(80deg);}
+			70% {left: 200px; top: 200px;}
+			80% {left: 1450px; top: 600px;}
+			100% {left: 1093px; top: 289px;}
+			}
+#n9 { animation-name: eleven;
+			animation-duration: 5s;
+			position: absolute; left: 1205px; top: 359px;
+			 }
+	@keyframes eleven {
+			0% {left: 1205px; top: 359px;
+			}
+			50% {left: 1100px; top: 100px; transform: rotate(130deg);}
+			70% {left: 700px; top: 200px;}
+			80% {left: 1150px; top: 700px;}
+			100% {left: 1205px; top: 359px;}
+			}
+#n5_2 { animation-name: twelve;
+			animation-duration: 5s;
+			position: absolute; left: 1335px; top: 284px;
+			 }
+	@keyframes twelve {
+			0% {left: 1335px; top: 284px;
+			}
+			50% {left: 1200px; top: 70px; transform: rotate(220deg);}
+			70% {left: 900px; top: 500px;}
+			80% {left: 1100px; top: -100px;}
+			100% {left: 1335px; top: 284px;}
+			}
+#n5_1 { animation-name: thirteen;
+			animation-duration: 5s;
+			position: absolute; left: 1427px; top: 284px;
+			 }
+	@keyframes thirteen {
+			0% {left: 1427px; top: 284px;
+			}
+			50% {left: 100px; top: 0; transform: rotate(60deg);}
+			70% {left: 200px; top: 300px;}
+			80% {left: 1300px; top: 300px;}
+			100% {left: 1427px; top: 284px;}
+			}
+
+/**footer**/
+#footer { width: 292px; margin: 0 auto; font-size: 12px; color: #0000fe; font-family: 'Noto Sans', sans-serif; text-align: center; margin-top: 542px; margin-right: 68px;}

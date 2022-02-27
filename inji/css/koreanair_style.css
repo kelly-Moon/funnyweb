@@ -1,0 +1,242 @@
+#wrap {
+	width: 1600px;
+	margin: 0 auto;
+}
+header {
+	width: 100%; height: 260px;
+	overflow: hidden;
+	position: relative;
+}
+section {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 250px;
+}
+footer {
+	width: 100%; height: 80px;
+	background-color: #0056e1;
+}
+
+/******header******/
+.close_icon {
+	width: 80px; height: 80px;
+	background-image: url(../images/seemore_graphic_01.jpg);
+	background-repeat: no-repeat;
+	position: fixed; top: 0; right: 0;
+}
+.home_icon {
+	width: 80px; height: 80px;
+	background-image: url(../images/seemore_graphic_02.jpg);
+	background-repeat: no-repeat;
+	position: fixed; top: 0; left: 0;
+}
+.top_icon {
+	width: 80px; height: 80px;
+	background-image: url(../images/top_icon.jpg);
+	background-repeat: no-repeat;
+	position: fixed; bottom: 0; right: 0;
+}
+.linebox {
+	width: 240px; height: 89px;
+	background-image: url(../images/publishing.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 149px; left: 80px;
+}
+.category ul {
+	position: absolute; top: 60px; right: 255px;
+}
+.category ul li {
+	float: left;
+}
+.category ul li a {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 1.5em;
+	margin: 0 15px;
+	letter-spacing: 0.3px;
+}
+.category ul li.on a {
+	text-decoration: underline;
+}
+
+/******section******/
+.title {
+	width: 100%;
+}
+p.title01 {
+	text-align: center;
+	font-size: 1.8em;
+	padding-bottom: 24px;
+	font-weight: 700;
+}
+p.title02 {
+	text-align: center;
+	font-size: 1.3em;
+	padding-bottom: 40px;
+}
+p.title03 {
+	text-align: center;
+	font-size: 1.2em;
+	font-family: 'Nanum Gothic', sans-serif;
+	margin-bottom: 40px;
+	font-weight: 700;
+	line-height: 25px;
+}
+p.title03:hover a {
+	color: #000;
+	text-decoration: underline;
+}
+p.title04 {
+	text-align: center;
+	font-size: 1.2em;
+	font-family: 'Nanum Gothic', sans-serif;
+	line-height: 26px;
+	margin-bottom: 50px;
+}
+
+.img_box {
+	width: 100%;
+}
+
+.pc_mockbox {
+	width: 1100px; height: 733px;
+	margin-left: 250px;
+	position: relative;
+	margin-bottom: 63px;
+}
+.pc_mock_img {
+	background-image: url(../images/koreanair_01.jpg);
+	background-repeat: no-repeat;
+	width: 1100px; height: 733px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.pc_mock_white {
+	width: 1100px; height: 733px;
+	background-color: #fff;
+	position: absolute; top: 0; left: 0;
+	opacity: 0;
+	transition-duration: 0.7s;
+}
+.pc_mock_white .button_w01 {
+	width: 195px; height: 52px;
+	background-image: url(../images/button_w.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 353px; left:  460px;
+}
+.pc_mockbox:hover .pc_mock_white {
+	opacity: 0.8;
+}
+
+.tab_mockbox {
+	width: 1100px; height: 731px;
+	margin-left: 250px;
+	position: relative;
+	margin-bottom: 130px;
+}
+.tab_mock_img {
+	background-image: url(../images/koreanair_02.jpg);
+	background-repeat: no-repeat;
+	width: 1100px; height: 731px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.tab_mock_white {
+	width: 1100px; height: 731px;
+	background-color: #fff;
+	position: absolute; top: 0; left: 0;
+	opacity: 0;
+	transition-duration: 0.7s;
+}
+.tab_mock_white .button_w01 {
+	width: 195px; height: 52px;
+	background-image: url(../images/button_w.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 353px; left:  460px;
+}
+.tab_mockbox:hover .tab_mock_white {
+	opacity: 0.8;
+}
+
+
+/****detail_box****/
+.left {
+	width: 50%;
+	float: left;
+	margin-bottom: 150px;
+}
+.tab_img {
+	width: 496px; height: 715px;
+	background-image: url(../images/koreanair_04.jpg);
+	background-repeat: no-repeat;
+	margin-left: 250px;
+	margin-bottom: 83px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.mob_img {
+	width: 496px; height: 700px;
+	background-image: url(../images/koreanair_05.jpg);
+	background-repeat: no-repeat;
+	margin-left: 250px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.right {
+	width: 50%;
+	float: left;
+}
+.pc_img {
+	width: 550px; height: 1570px;
+	background-image: url(../images/koreanair_06.jpg);
+	background-repeat: no-repeat;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.exp_l,.exp_r,.exp_or {
+	font-size: 1.2em;
+	font-family: 'Nanum Gothic', sans-serif;	
+}
+
+.exp_l {
+	margin-left: 250px;
+	margin-bottom: 50px;
+}
+.exp_r {
+	margin-bottom: 50px;
+}
+.last {
+	margin-bottom: 173px;
+}
+p.welcome {
+	font-size: 1.6em;
+	margin-left: 415px;
+}
+p.welcome:hover {
+	text-decoration: underline;
+}
+
+.org_box {
+	clear: both;
+	width: 100%;
+}
+.org_img {
+	width: 496px; height: 513px;
+	margin-left: 557px;
+	background-image: url(../images/koreanair_03.jpg);
+	background-repeat: no-repeat;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+}
+.exp_or {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/******footer******/
+address {
+	color: #fff;
+	font-size: 1.2em;
+	text-align: center;
+	padding-top: 35px;
+}
+
+
+

@@ -1,0 +1,56 @@
+/*outline*/
+#header {
+    width: 100%; height: 63px;
+    cursor: pointer;
+}
+
+#banner {
+    width: 100%;
+}
+#section {
+    width: 100%;
+}
+#footer {
+    width: 100%; 
+}
+.container {
+    width: 1420px; 
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/*header*/
+#logo {
+    float: left; 
+    margin-right: 10px; 
+    margin-top: 20px;
+}
+
+#line {border-bottom: 1px solid #393939;}
+#nav {}
+#nav .gnb {
+    float: left; 
+    width: 60%;}
+#nav .gnb li {
+    float: left;
+    width: 14.2857%;
+    transition: 0.5s;
+}
+#nav .gnb li a {
+    display: block;
+    text-align: center;
+    height: 63px;
+    line-height: 63px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    
+}
+#nav .gnb li :first-child a {
+    border-bottom: 2px solid #ba0707;
+}
+#nav .gnb li a:hover {
+    background-color: #11172b; 
+    border-bottom: 2px solid #ba0707;
+    box-sizing: border-box;
+}

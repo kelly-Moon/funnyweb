@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Once Newyorker</title>
+<link rel="shortcut icon" href="../img/favi.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+<link rel="stylesheet" href="../css/total2.css" />
+<link rel="stylesheet" href="../css/reset.css">
+<link href="https://fonts.googleapis.com/css?family=Dosis:700|Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">
+
+<style>
+    .next_page {
+        position: fixed;
+        top: 16px;right: 36px;
+        font-family: 'Playfair Display SC', serif;
+        color: #505b8a;
+        font-size: 16px;
+        /* background-color: salmon;*/
+        height: 30px;
+        line-height: 30px;
+        font-weight: 800;
+    }
+    .next_page a {
+        color: #777;
+        display: block;
+        padding-right: 30px;
+        background: url(../img/right-arrow.png) no-repeat right 12px;
+    }
+    .previous_page {
+        position: fixed;
+        bottom: 16px;right: 36px;
+        font-family: 'Playfair Display SC', serif;
+        color: #505b8a;
+        font-size: 16px;
+        /* background-color: salmon;*/
+        height: 30px;
+        line-height: 30px;
+        font-weight: 800;
+    }
+    .previous_page a {
+        color: #777;
+        display: block;
+        padding-left: 30px;
+        background: url(../img/left_arrow.png) no-repeat left 10px;
+    }
+    </style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="../js/infiniteslidev2.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+		$('.scroll1').infiniteslide();
+		$('.scroll3').infiniteslide({
+			speed: 150,
+			direction: 'down'
+		});
+	});
+</script>
+
+</head>
+<body>
+<div class="home"><a href="index-ko.html"><img src="../img/home_btn.png" alt="홈버튼"></a></div>
+
+<div class="next_page"><a href="profile3-ko.html">PROFILE &amp; CONTACT</a></div>
+<div class="previous_page"><a href="total-ko.html">My Work1</a></div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------->
+<div class="module">
+	<ul class="scroll3">
+		<li>
+            <img src="../img/pG1-img6.jpg" alt="브룩클린 브릿지">
+		    <div class="description">
+                <p class="title">Brooklyn Bridge</p>
+                <p class="txt">브룩클린 브릿지는 뉴욕에 위치한 현수교이다. 1883년에 완공되어 이스트 강을 사이에 두고 맨해튼과 브루클린을 잇는다.</p>    
+		    </div>
+        </li>
+		<li><img src="../img/pG1-img7.jpg" alt="크라이슬러 빌딩">
+		    <div class="description">
+		        <p class="title">Chrysler Building</p>
+		        <p class="txt">크라이슬러 빌딩은 맨하탄의 미드타운에 가까운 동쪽에 위치한 아르데코 형식의 고층 건물이다. 1930년에 완공되었고 엠파이어 스테이트 빌딩이 건설되기 전까지는 세계에서 가장 높은 빌딩이었다.</p>
+		    </div>
+		</li>
+		<li><img src="../img/pG1-img8.jpg" alt="센트럴파크">
+		    <div class="description">
+		        <p class="title">Central Park</p>
+		        <p class="txt">센트럴 파크는 뉴욕 맨해튼의 어퍼 웨스트와 어퍼 이스트의 사이에 위치한 도시 중심부의 공원이다. 미국 전역을 통틀어 가장 많은 사람이 찾는 공원이며, 매년 37백만명 정도의 관광객이 방문하고 세계에서 가장 많이 등장한 촬영지이다.</p>
+		    </div>
+		</li>
+	</ul>
+</div>
+
+
+
+
+<div class="module2">
+    <ul class="scroll1">
+        <li><a href="../html/pg6-ko.html">
+            <div class="no"><img src="../img/no02_01.png" alt="no"></div>
+            <div class="num"><img src="../img/w2_01.png" alt="1" width="150"></div>
+            <h2>PROMOTION WEB</h2>
+            <p>EXHIBITION BY SEONGSU MUSEUM</p>
+        </a></li>
+        <li><a href="../html/pg7-ko.html">
+            <div class="no"><img src="../img/no02_02.png" alt="no"></div>
+            <div class="num"><img src="../img/w2_03.png" alt="2" width="150"></div>
+            <h2>REBRANDING WEB</h2>
+            <p>FLOWERSSOM</p>
+        </a></li>
+        <li><a href="../html/pg8-ko.html">
+            <div class="no"><img src="../img/no02_03.png" alt="no"></div>
+            <div class="num"><img src="../img/w2_05.png" alt="3" width="150"></div>
+            <h2>RESPONSIVE WEB</h2>
+            <p>ASIANA</p>
+        </a></li>
+        
+    </ul>
+</div>
+
+</body>
+</html>

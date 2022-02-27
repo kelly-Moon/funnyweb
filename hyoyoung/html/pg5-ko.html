@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Once Newyorker</title>
+    <link rel="shortcut icon" href="../img/favi.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/detail_page2.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">
+    <style>
+        body {background-color: #fff;}
+        .title {margin-bottom: 90px;}
+      
+    </style>
+    <link rel="stylesheet" href="../css/jquery.modally2.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/inobounce/0.2.0/inobounce.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.modally.js"></script>
+</head>
+
+<body> 
+   
+   <header>
+        <div class="home"><a href="index-ko.html"><img src="../img/pG2_03.png" alt="홈버튼"></a></div>
+        <div class="total"><a href="total-ko.html"><img src="../img/pG2_06.png" alt="앞페이지"></a></div>
+    </header>
+   
+   
+    <div id="carousel">
+        <div id="slides">
+            <ul>
+                <li class="slide">
+                    <div class="quoteContainer">
+                        <div class="nums"><img src="../img/p205.png" alt="no.5"></div>
+                        <div class="mywork">
+                            <p class="title">EXPERIENCE<br>MY<br>MOBILE DESIGN</p>
+                            <p class="txt"><span>머니북</span><br>- 머니북은 제가 써보고 싶은 가계부 어플을 디자인해본 것입니다. 개개인의 계좌나 지출 내역을 시각적으로 원하는 기간별로 관리하기 쉽게 만들었습니다.</p>
+                            <button><a href="#lorem" target="_modal" class="button white">MORE</a></button>
+                        </div>
+                        <div class="frame">
+                            <div class="mockup"><img src="../img/pG21_03.jpg" alt="모바일디자인 목업"></div>
+                        </div>
+                        <div class="tool_period">
+                            <div class="period"><span>작업 시간</span><br>- 36시간</div>
+                            <div class="tool"><span>도구</span><br>- 일러스트레이터 <br>- 포토샵</div>
+                        </div>
+                    </div>
+                    
+                
+            </ul>
+        </div>
+        
+        
+        
+<!--    lightbox        -->
+        <div id="lorem" style="display:none" class="modally-init" modally-max-width="1280">
+            <img src="../img/mobile-ko.jpg" alt="모바일 디자인 스타일가이드" width="100%">
+            <div class="button-wrap">
+                <a target="_modal:close" class="button small">Close me!</a>
+            </div>
+        </div>
+        
+        
+        <div class="btn-bar">
+            <div id="buttons">
+                <a id="prev" href="pg4-ko.html">&lt;</a> 
+                <a id="next" href="total2-ko.html">&gt;</a> 
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    <!--lightbox-->
+    <script type="text/javascript">
+            jQuery(document).ready(function() {
+                $('#ipsum').modally('ipsum', {'max-width': 800});
+                //$('#lorem').modally();
+                $('#dolor').modally();
+                modally('video-modal', {video: true, 'max-width': 800});
+            });
+    </script>  
+</body>
+
+</html>

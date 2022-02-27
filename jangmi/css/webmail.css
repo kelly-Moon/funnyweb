@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Shrikhand');
+@import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
+@import url('https://fonts.googleapis.com/css?family=Muli|Roboto|Shrikhand');
+@font-face {
+	font-family: 'arrows';
+	src:url('../fonts/arrows/arrows.eot');
+	src:url('../fonts/arrows/arrows.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/arrows/arrows.woff') format('woff'),
+		url('../fonts/arrows/arrows.ttf') format('truetype'),
+		url('../fonts/arrows/arrows.svg#arrows') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*layout*/
+#wrap{
+	width: 100%;
+}
+
+/*sub_img*/
+#sub_img{
+	width:125px; 
+	height:356px;
+	background:url(../img/sub.png) no-repeat;
+	position: absolute;
+	top:0; left:0;
+}
+
+/*container*/
+#container{
+	width: 1570px;
+	height: 3770px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/*nav*/
+.nav{
+	width:250px;
+	height:376px;
+	float: left;
+	margin-right: 21px;
+	margin-top: 80px;
+	margin-left: 100px;
+}
+.nav ul{}
+.nav ul li{
+	margin-bottom: 13px;
+}
+.nav ul li a{
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	color: #555;
+
+}
+.nav ul li a:hover{
+	color:#acacac;
+}
+
+/*section1*/
+.section1{
+	width:822px;
+	height: 1000px;
+	float: left;
+	margin-right: 18px;
+	margin-top: 80px;
+}
+.section1 .content1{
+	width: 822px;
+	height: 2819px;
+	background:url(../img/webmail_01.jpg) no-repeat;
+	float: left;
+	margin-right: 12px;
+}
+.section1 .content4{
+	width: 822px;
+	height: 547px;
+	background:url(../img/webmail_02.jpg) no-repeat;
+	float: left;
+	margin-top: 51px;
+}
+
+/*section2*/
+.section2{
+	width: 261px;
+	height: 408px;
+	float: left;
+	margin-top: 80px;
+	margin-right: 92px;
+	position: fixed;
+	right:0;
+}
+/*section2 .text1*/
+.section2 .text1{
+	width: 261px;
+	height: 108px;
+	float: left;
+}
+.section2 .text1 h2{
+	font-size: 28px;
+	font-family: 'Nanum Myeongjo', serif;
+	margin-bottom: 25px;
+}
+.section2 .text1 p{
+	font-family: 'Nanum Barun Gothic', sans-serif;
+	font-size: 17px;
+	line-height: 28px;
+	text-align:justify;
+}
+
+/*section2 .text2*/
+.section2 .text2{
+	width: 63px;
+	height: 164px;
+	float: left;
+	background-color: #fff;
+}
+.section2 .text2 p{
+	font-size: 20px;
+	text-align: center;
+	line-height: 174px;
+	transform: rotate(90deg);
+	font-weight: bold;
+}
+
+/*section2 .text3*/
+.section2 .text3{
+	width: 198px;
+	height: 164px;
+	float: left;
+	margin-top: 6px;
+}
+.section2 .text3 p{
+	font-family: 'Nanum Barun Gothic', sans-serif;
+	font-size: 17px;
+	line-height: 28px;
+	text-align:justify;
+}
+
+/*section2 .text4*/
+.section2 .text4{
+	width: 261px;
+	height: 164px;
+	float: left;
+	margin-top: 1px;
+}
+.section2 .text4 p{
+	font-family: 'Nanum Barun Gothic', sans-serif;
+	font-size: 17px;
+	line-height: 28px;
+	text-align:justify;
+}
+
+/*move_top*/
+#move_top{
+	display: none;
+	position: fixed; bottom: 100px; right: 200px;
+}
+#move_top img{
+	width: 100%;
+}
+
+
+/*footer*/
+#footer{
+	width: 100%;
+	height: 28px;
+	border-top: 1px solid #000;
+	clear: both;
+}
+#footer p{
+	width:210px; 
+	height:28px;
+	float:right;
+}

@@ -1,0 +1,14 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button{margin:0;padding:0;border:none; }
+
+body{
+font-family:'Noto Sans KR', sans-serif,'PT Serif', serif,'Lora', serif, 'Roboto', sans-serif;
+color: #393939;
+}
+
+li{list-style:none;}
+
+a{color:#393939;text-decoration:none;}
+
+img{vertical-align:top;}
+
+img,fieldset,iframe{border:0 none;}

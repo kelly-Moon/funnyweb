@@ -1,0 +1,335 @@
+/*  font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display SC', serif;*/
+
+body {
+    position: relative;
+    height: 100%;
+    /*            background-color: dimgrey;    */
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+img {
+    border: none;
+}
+
+
+header {
+    height: 16vh;
+    /*            background-color: dimgrey;*/
+}
+
+.home {
+    float: left;
+    margin: 36px 0 0 36px;
+}
+
+.total {
+    float: right;
+    margin: 50px 36px 0 0;
+}
+
+
+#carousel {
+    width: 100%;
+/*                background-color: lightcoral;*/
+    height: 83vh;
+}
+
+#slides {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+/*    padding-top: 2%;*/
+    height: 94%;
+    /*            background-color: dodgerblue;*/
+}
+
+#slides ul {
+    list-style: none;
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    /*            background-color: azure;*/
+}
+
+#slides li {
+    width: 100vh;
+    height: 600px;
+    float: left;
+    /*            text-align: center;*/
+    position: relative;
+    font-family: lato, sans-serif;
+    /*            background-color: yellow;*/
+}
+
+
+
+.btn-bar {
+    width: 100%;
+    /*            display: block;*/
+    position: relative;
+    /*            background-color: fuchsia;*/
+    height: 40px;
+}
+
+#buttons {
+    width: 12%;
+    float: right;
+    /*            background-color: tan;*/
+}
+
+#buttons a {
+    display: block;
+    text-align: center;
+    float: left;
+    width: 20px;
+    height: 20px;
+    /*            margin: 0 60px;*/
+
+    /*            text-decoration: none;*/
+    padding: 8px;
+    /*            background-color: firebrick;*/
+    margin-left: 15px;
+    font-size: 16px;
+    color: #777;
+    line-height: 20px;
+    font-weight: lighter;
+}
+
+.quoteContainer {
+/*    display: table;*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+/*                background-color: darkviolet;*/
+}
+
+.nums {
+    margin-top: 45px;
+    float: left;
+    margin-left: 36px;
+    /*            background-color: dodgerblue;*/
+}
+
+.mywork {
+    margin: 45px;
+    float: left;
+    /*            margin-left: 115px;*/
+    margin-left: 8%;
+    position: relative;
+    z-index: 10;
+/*    background-color: fuchsia;*/
+    height: 90%;
+    width: 71%;
+}
+
+
+.title {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: left;
+    margin-bottom: 117px;
+    line-height: 60px;
+}
+
+.txt {
+    margin: 0;
+    padding: 0;
+    color: #b983ae;
+    font-size: 16px;
+    text-align: left;
+    width: 310px;
+    line-height: 22px;
+/*    background-color: forestgreen;*/
+}
+
+.txt span {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.mywork button {
+    position: absolute;
+    bottom: 0;left: 0;
+    width: 240px;
+    height: 50px;
+    background-color: #000;
+}
+
+.mywork button a {
+    display: block;
+    width: 240px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+    animation-name:magnify;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+/*animation*/
+
+
+
+.frame {
+    position: absolute;
+    top: 0;
+    left: 37%;
+/*    background-color: red;*/
+    width: 824px;
+    height: 588px;
+
+}
+
+.eye {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 3%;
+    right: 1%;
+    /*            background-color: royalblue;*/
+}
+
+/*animation*/
+.eye img {
+    width: 80%;
+    animation-name:magnify;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+@keyframes magnify {
+    0 { }
+    100% {opacity: 0;}
+}
+
+
+
+.mockup {}
+
+.mockup img {position: relative;}
+.tool_period {
+    float: left;
+    margin-top: 460px;
+}
+
+.period {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #777;
+}
+
+.period span {
+    font-weight:bolder;
+    color: #b983ae;
+}
+
+.tool {
+    font-size: 16px;
+    color: #777;
+}
+
+.tool span {
+    font-weight: bolder;
+    color: #b983ae;
+}
+
+
+
+
+
+
+
+/*lightbox*/
+body {
+    transition: all 250ms ease-in-out;
+    filter: blur(0px);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body.modally-open main {
+    filter: blur(5px);
+}
+
+.button.small {
+    opacity: 0;
+    cursor: pointer;
+    height: 56px;
+    line-height: 54px;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    vertical-align: middle;
+    font-weight: bold;
+    transition: all 250ms ease-in-out;
+    border: solid 1px #ff9a9e;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ff9a9e;
+}
+
+.button.icon i {
+    margin-right: 8px;
+}
+
+.modally-wrap.open:not(.last) {
+    filter: blur(5px);
+}
+
+.modally .button-wrap {
+    text-align: right;
+}
+
+.modally .button-wrap .button {
+    margin-left: 16px;
+}
+
+#lorem {}
+
+
+#lorem img {
+    float: left;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.button-wrap {
+    clear: both;
+}
+
+.modally .modally-close-button {
+    position: absolute;
+    top: 54px;
+    right: 21px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

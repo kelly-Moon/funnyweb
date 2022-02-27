@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIM DO HEE</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="../css/delta_air.css">
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/font-kopub@1.0/kopubdotum.min.css'>
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="artwork_bg">
+        <div class="nav">
+            <ul class="gnb">
+                <li><a href="../index.html">HOME</a></li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li class="underbar">
+                    <a href="work.html">WORK</a>
+                    <ul class="dropdown">
+                        <li><a href="artwork.html">GRAPHIC</a></li>
+                        <li><a href="web_mail.html">WEB</a></li>
+                        <li><a href="kiehl.html">WEB SITE</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="contents">
+            <div class="main_title">
+                <h1>WEB SITE</h1>
+            </div>
+            <div class="main_txt">
+                <h2>Delta Air Site(Reponsive)</h2>
+                <p>델타 항공사 사이트 (반응형)</p>
+                <a href="../delta_air/index.html" target="_blank"><button class="btn">
+                Go To Site</button></a>
+            </div>
+            <div class="main_img">
+                <a href="../delta_air/index.html" target="_blank"><img src="../img/delta_air_01.jpg" alt=""></a>
+                
+            </div>
+            <div class="sub_txt">
+                <h3>Analysis</h3>
+                <p>델타 항공사의 웹사이트를 반응형으로 제작하였습니다.<br>
+                    공식 사이트와 레이아웃을 최대한 비슷하게 제작하는 것이 목표였으며<br>
+                    반응형 단계에서 컨텐츠가 자연스럽게 위치할 수 있도록 노력하였습니다.<br>
+                    반응형 웹사이트로서 PC(1920px), Notebook(960px), 
+                    Tablet(780px),<br> Mobile(480px)로도 구동이 가능하도록 하였습니다.
+                </p>
+            </div>
+            <div class="line"></div>
+            <div class="txt_line"></div>
+            <div class="center_line"></div>
+            <div class="center_circle"></div>
+            <div class="line_02"></div>
+            
+            <div class="detail_txt">
+                <h2>Delta Air Detailed</h2>
+            </div>
+            <div class="detail_txt_02">
+                <span>PC(1920px)</span>
+            </div>
+            <div class="detail_txt_03">
+                <span>Mobile(480px)</span>
+            </div>
+            <div class="detail_txt_04">
+                <span>Tablet(780px)</span>
+            </div>
+            <div class="detail_img">
+                <img src="../img/delta_air_02.jpg" alt="">
+                <img src="../img/delta_air_03.jpg" alt="">
+                <img src="../img/delta_air_04.jpg" alt="">
+            </div>
+           
+        </div>
+        <!--contents-->
+        
+        <div class="arrow_icon">
+            <div class="arrow_01">
+                <a href="sobaek.html"><span class="material-icons md-48 color">&#xe5e0;</span></a>
+            </div>
+            <div class="arrow_02">
+                <a href="skin_rx.html"><span class="material-icons md-48 color">&#xe5e1;</span></a>
+            </div>
+        </div>
+        
+         <div id="footer">
+            <p>© 2021 KIM DO HEE Portfolio |  All rights reserved.</p>
+        </div>
+        <!--footer-->
+        
+        <div id="top_icon">
+            <a href="#artwork_bg" class="top_btn">
+            <img src="../img/arrow.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!--artwork_bg-->
+
+<script type="text/javascript">
+ $(document).ready(function() {
+    $("a.top_btn").anchorAnimate()
+ });
+ jQuery.fn.anchorAnimate = function(settings) {
+    settings = jQuery.extend({
+    speed : 500
+    }, settings);    
+    return this.each(function(){
+    var caller = this
+    $(caller).click(function (event) {    
+    event.preventDefault()
+    var locationHref = window.location.href
+    var elementClick = $(caller).attr("href")
+    var destination = $(elementClick).offset().top;
+    $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() 
+    {
+    window.location.hash = elementClick
+    });
+     return false;
+    })
+    })
+ }
+</script>
+
+</body>
+</html>

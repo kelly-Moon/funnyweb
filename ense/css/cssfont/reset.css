@@ -1,0 +1,24 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button{
+ margin:0 auto;
+ padding:0;
+ border:none; 
+}
+
+body, input, textarea, select, button, table {
+ font-family:"NotoSansKR","나눔고딕","Nanum Gothic","돋음", Dotum, sans-selif;
+}
+
+li{
+ list-style:none;
+}
+a{
+ text-decoration:none; 
+}
+img{
+ vertical-align:top;
+}
+img,fieldset,iframe{
+ border:0 none;
+}
+
+

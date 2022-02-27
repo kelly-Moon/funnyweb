@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JOE.POLIO</title>
+    <link rel="shortcut icon" href="../img/cat.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="stylesheet" href="../css/web_02.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header>
+        <a href="../index.html" class="main_page">MAIN</a>
+        <div class="nav">
+            <a href="../html/web_01.html" class="gnb01">IONIA</a>
+            <a href="../html/web_02.html" class="gnb02">멋집</a>
+            <a href="../html/web_03.html" class="gnb03">Practice</a>
+        </div>
+    </header>
+    <div class="toggle">
+        <div class="toggle_line"></div>
+        <div class="toggle_line"></div>
+        <div class="toggle_line"></div>
+    </div>
+    <div class="toggle_menu">
+        <a href="../html/web_01.html" class="tggl_menu_01">WEB</a>
+        <a href="../html/visual_01.html" class="tggl_menu_02">VISUAL</a>
+        <a href="../html/uxui_01.html" class="tggl_menu_03">UX/UI</a>
+        <a href="../html/living_01.html" class="tggl_menu_03">LIVING</a>
+        <a href="../html/bici_01.html" class="tggl_menu_03">BI/CI</a>
+    </div>
+
+    <div class="body_wrap" id="top">
+        
+
+        <div class="contents">
+            <div class="txt_main">MEOT-JIB</div>
+            <div class="txt_sub">인테리어 시공사 멋집 프로젝트</div>
+            
+        </div>
+        <div class="contact">
+            <div class="txt_cntct01">1997.03.01.</div>
+            <div class="txt_cntct02">조성재</div>
+            <div class="txt_cntct03">Living, Web, Visual</div>
+        </div>
+
+    </div>
+    <div class="info_wrap">
+        <div class="container">
+            <div class="contents_top">
+                <div class="ctt_top_left">
+                    <div class="top_left_num">02</div>
+                    <div class="link_box">
+                        <a href="http://joesketch.dothome.co.kr/mj/" class="top_left_link" target="_blank">
+                            Go to 멋집
+                            <span class="material-icons-outlined">
+                                arrow_forward_ios
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="top_left_txt01">
+                        <div class="txt01_top">Concept</div>
+                        <div class="txt01_bot">규칙적인 그리드, 화이트, 파스텔, 심플, 미니멀 </div>
+                    </div>
+                    <div class="top_left_txt02">
+                        <div class="txt02_top">About</div>
+                        <div class="txt02_bot">
+                        끝까지 믿을 수 있는 책임지는 시공사 멋집! 이라는 가상의 시공사 컨셉으로 진행한 웹디자인 프로젝트로 노멀하고 간단한 디자인과 그리드의 규칙적 배치가 특징
+                        </div>
+                    </div>
+                    <div class="top_left_txt03">
+                        <div class="txt03_top">Info</div>
+                        <div class="txt03_bot">
+                            제작기간 : 152시간 (2021.05.03. - 2021.05.21.)<br>
+                            http://www.dothome.joesketch.co.kr/meotjib
+                        </div>
+                    </div>
+                </div>
+                <div class="ctt_top_right">
+                    
+                </div>
+            </div>
+            <div class="contents_bottom">
+                <div class="ctt_bot_left">
+                    
+                </div>
+                <div class="ctt_bot_right">
+                    <div class="bot_right_01"></div>
+                    <div class="bot_right_02"></div>
+                    <div class="bot_right_03"></div>
+                </div>
+            </div>
+            <div class="contents_box">
+                <div class="con_box_txt01">
+                    그리스 IN 제주<br>
+                    반응형 리조트 홈페이지
+                </div>
+                <div class="con_box_txt02">IONIA</div>
+            </div>
+            <a href="#top" class="top_button">TOP</a>
+        </div>
+        
+        
+        
+    </div>
+    
+    
+    <footer>
+        <div class="foot_email">djangoddango@kakao.com</div>
+    </footer>
+        
+        
+        
+        
+        
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <script>
+        $(function() {
+            $('.toggle').click(function() {
+                $('.toggle_line:first-of-type').toggleClass('toggleclass01')
+                $('.toggle_line:last-of-type').toggleClass('toggleclass02')
+                $('.toggle_line:nth-of-type(2)').toggleClass('toggleclass03')
+                $('.toggle_menu').toggleClass('toggle_menu_js')
+                $('.toggle_menu a').toggleClass('toggle_menu_div_js')
+            });
+        });
+    </script>
+
+    <script>
+        $(window).scroll(function() {
+
+            if ($(this).scrollTop() > 680) {
+                $(".contact").css('display', 'none');
+            } else {
+                $(".contact").css('display', 'block');
+            }
+        });
+    </script>
+    <script>
+        $(window).scroll(function() {
+
+            if ($(this).scrollTop() > 380) {
+
+                $("header").css('background', '#222');
+            } else {
+
+                $("header").css('background', 'none');
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a.top_button").anchorAnimate()
+        });
+        jQuery.fn.anchorAnimate = function(settings) {
+            settings = jQuery.extend({
+                speed: 500
+            }, settings);
+            return this.each(function() {
+                var caller = this
+                $(caller).click(function(event) {
+                    event.preventDefault()
+                    var locationHref = window.location.href
+                    var elementClick = $(caller).attr("href")
+                    var destination = $(elementClick).offset().top;
+                    $("html:not(:animated),body:not(:animated)").animate({
+                        scrollTop: destination
+                    }, settings.speed, function() {
+                        window.location.hash = elementClick
+                    });
+                    return false;
+                })
+            })
+        }
+    </script>
+</body>
+
+</html>

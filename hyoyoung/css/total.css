@@ -1,0 +1,134 @@
+.home {
+    position:absolute;
+    z-index: 100;
+    top: 36px ;left: 36px;
+
+}
+/**************vertical*/
+
+/*여기서 오버플로의 지정할때 사이즈 꼭 넣기*/
+.module {
+    width: 35%;height: 100vh;
+/*	border-bottom: 1px solid #ccc;*/
+    overflow-y: hidden;
+    float: left;
+}
+.scroll3 {
+    display: none;
+/*    width: 555px;*/
+}
+
+.scroll3 li {
+    width: 100%;
+	margin: 0;padding: 0;
+    position: relative;
+}
+  
+
+.scroll3 li img {
+	vertical-align: bottom;
+    margin: 0;padding: 0;
+    width: 100%;
+}
+
+
+.description {
+    position: absolute;
+    bottom: 0;right: 0;
+    z-index: 1000;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Playfair Display SC', serif;
+    color: #fff;
+    margin-bottom: 20px;
+    width: 400px;
+    text-align: right;
+}
+.txt {
+    width: 400px;
+    font-size: 16px;
+    color: #fff;
+    text-align: justify;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+
+/************horizontal*/
+
+.module2 {
+	width: 65%;
+    height: 100vh;
+    overflow: hidden;
+/*    margin-left: 78px;*/
+/*    background: tan;*/
+    float: left;
+}
+.scroll1 {
+    display: none;
+    
+}
+.scroll1 img {
+    vertical-align: bottom;
+}
+
+.scroll1 li {
+    margin-top: 10vh;
+    height: 80vh;
+    border-left: 3px solid #eeadbb;
+    margin-right: 20px;
+}
+.scroll1 li a {
+    display: block;
+    width: 360px;height: 100vh;
+    background-color: white;
+}
+
+.no {
+    margin-left: 38px;margin-bottom: 45%;
+}
+.num {
+    width: 240px;
+    margin-left: 38px;padding-bottom: 45px;
+    border-bottom: 10px solid #eeadbb;
+    margin-bottom: 25px;
+}
+.scroll1 li h2 {
+    margin-left: 38px;
+    font-weight: bolder;
+    color: #eeadbb;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.scroll1 li p {
+    margin-left: 50px;
+    color: #505b8a;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+
+.scroll1 li:nth-child(2) {border-left: 3px solid #e9a6ba;}
+.scroll1 li:nth-child(2) .num {border-bottom: 10px solid #e9a6ba;}
+.scroll1 li:nth-child(2) h2 {color: #e9a6ba;}
+
+.scroll1 li:nth-child(3) {border-left: 3px solid #dd98b8;}
+.scroll1 li:nth-child(3) .num {border-bottom: 10px solid #dd98b8;}
+.scroll1 li:nth-child(3) h2 {color: #dd98b8;}
+
+.scroll1 li:nth-child(4) {border-left: 3px solid #b983ae;}
+.scroll1 li:nth-child(4) .num {border-bottom: 10px solid #b983ae;}
+.scroll1 li:nth-child(4) h2 {color: #b983ae;}
+
+.scroll1 li:nth-child(5) {border-left: 3px solid #a179a6;}
+.scroll1 li:nth-child(5) .num {border-bottom: 10px solid #a179a6;}
+.scroll1 li:nth-child(5) h2 {color: #a179a6;}

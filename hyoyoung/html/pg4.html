@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Once Newyorker</title>
+    <link rel="shortcut icon" href="../img/favi.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/detail_page2.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/jquery.modally2.css">
+    <style>
+        .txt { color: #fff;}
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/inobounce/0.2.0/inobounce.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.modally.js"></script>
+</head>
+
+<body> 
+   
+   <header>
+        <div class="home"><a href="../index.html"><img src="../img/pG2_03.png" alt="home button"></a></div>
+        <div class="total"><a href="total.html"><img src="../img/pG2_06.png" alt="close blutton"></a></div>
+    </header>
+   
+   
+    <div id="carousel">
+        <div id="slides">
+            <ul>
+                <li class="slide">
+                    <div class="quoteContainer">
+                        <div class="nums"><img src="../img/p204.png" alt="no.4"></div>
+                        <div class="mywork">
+                            <p class="title">EXPERIENCE<br>MY<br>WEB-MAIL</p>
+                            <p class="txt"><span>WATCHA</span><br>- This webmail has a simple layout from bookstore company "KYOBO" which I think is similar to OTT(Over The Top) platform like nextlix and watch.</p>
+                            <button><a href="#lorem" target="_modal" class="button white">MORE</a></button>
+                        </div>
+                        <div class="frame">
+                            <div class="mockup"><img src="../img/pG2-401_11.jpg" alt="webmail mockup"></div>
+                        </div>
+                        <div class="tool_period">
+                            <div class="period"><span>PERIOD</span><br>- 15hrs</div>
+                            <div class="tool"><span>TOOL</span><br>- Illustrator <br>- Photoshop</div>
+                        </div>
+                    </div>
+                    
+                
+            </ul>
+        </div>
+        
+        
+        <div id="lorem" style="display:none" class="modally-init" modally-max-width="1280">
+    <!--        <h1 class="modal-title"></h1>-->
+            <img src="../img/webmail501.jpg" alt="webmail styleguide" width="100%">
+            <div class="button-wrap">
+                <a target="_modal:close" class="button small">Close me!</a>
+            </div>
+        </div>
+        
+        
+        <div class="btn-bar">
+            <div id="buttons">
+                <a id="prev" href="pg3.html">&lt;</a> 
+                <a id="next" href="pg5.html">&gt;</a> 
+            </div>
+        </div>
+
+    </div>
+    
+    <!--lightbox-->
+    <script type="text/javascript">
+            jQuery(document).ready(function() {
+                $('#ipsum').modally('ipsum', {'max-width': 800});
+                //$('#lorem').modally();
+                $('#dolor').modally();
+                modally('video-modal', {video: true, 'max-width': 800});
+            });
+    </script>  
+    
+</body>
+
+</html>

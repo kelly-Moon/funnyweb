@@ -1,0 +1,174 @@
+body {cursor: pointer;}
+header {
+    width:100%; height: 150px;
+    background-color:#fff;
+}
+.container {
+    width: 1420px; 
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+/*header*/
+#header_bg {
+    width: 100%;
+    height: 130px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+#logo {
+    float: left;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+}
+ul.lnb { 
+    position: absolute;
+    top: 30px;right: 0;}
+ul.lnb li {
+    float: left;
+    margin-right: 20px;
+}
+ul.lnb li:last-child{margin: 0;}
+ul.lnb li a {
+    color: #393939;
+    font-size: 15px;
+    font-weight: 400;
+}
+ul.lnb li a:hover {color: darkgrey;}
+ul.lnb li.search_box {
+    padding-top: 0;
+    display: none;
+}
+ul.lnb li input {
+	width: 120px; height: 25px;
+	border: 0;
+    border-bottom: 1px solid #393939;
+}
+
+ul.gnb {
+    position: absolute;
+    top: 100px;right: 0;}
+ul.gnb li {
+    float: left; 
+    padding-right: 30px;}
+ul.gnb li:last-child {padding: 0;}
+ul.gnb li a {
+    color: #393939;
+    font-size: 18px;
+    font-weight: 500;
+}
+ul.gnb li a:hover {
+    color: darkgrey;
+}
+
+/*contents*/
+#contents {
+    width: 1420px;
+    height: 450px;
+    background-color: #fafafa;
+    margin: 0 auto;
+}
+#contents h3 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    font-size: 23px;
+}
+#contents form.login_01 {width: 500px; margin: 0 auto;}
+
+#contents form.login_01 input{
+    display: block;
+    width: 500px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#contents .login_02 {
+    width: 150px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #393939;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    
+}
+#contents .login_02:hover {color: #393939; background-color: darkgray;}
+
+#contents ul {
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+#contents ul li:first-child {float: left; }
+#contents ul li:last-child {float: right;}
+#contents ul li:last-child:hover {color: darkgray;}
+
+
+/*footer*/
+footer {width: 100%;}
+footer #footer_bg {
+    width: 100%;
+    border-bottom: 1px solid #999;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+footer ul.menu {
+    float: left;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    padding: 10px;
+}
+footer ul.menu li {float: left;} 
+footer ul.menu li a {
+    display: block;
+    font-size: 15px;
+    color: #393939;
+    border-right: 1px solid #393939;
+    padding: 0 10px;
+    line-height: 15px;
+    font-weight: 700;
+} 
+footer ul.menu li:last-child a {border: 0;}
+footer ul.menu li a:hover {color: darkgray;}
+
+
+footer ul.menu02 {
+    float: left;
+    margin-left: 170px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 150px;
+    padding: 10px;
+}
+footer ul.menu02 li {float: left;} 
+footer ul.menu02 li a {
+    display: block;
+    font-size: 15px;
+    color: #393939;
+    line-height: 15px;
+    border-right: 1px solid #393939;
+    padding: 0 10px;
+}
+footer ul.menu02 li:last-child a {border: 0;}
+footer ul.menu02 li a:hover {color: darkgray;}
+
+footer ul.copyright{
+    float: right;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+footer ul.copyright li {
+    float: left;
+    font-size: 15px;
+    color: #393939;
+    line-height: 15px;
+}
+footer ul.copyright li:hover {color: darkgray;}#cb1a1a

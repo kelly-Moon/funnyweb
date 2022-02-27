@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+#container .contents_box {width: 1280px;}
+.contents_box {
+	width: 1280px;height: 500px;
+	background-size: 100%;
+	background-repeat: no-repeat;	
+}
+.work06_01 {
+	/*background-image: url(../img/work_06_coding/work_06_coding_01_on_and_on_full.jpg);*/
+	background-image: url(https://tistory3.daumcdn.net/tistory/1669583/skin/images/work_06_coding_01_on_and_on_full.jpg);
+	margin-bottom: 100px;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.4);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.work06_02 {
+	/*background-image: url(../img/work_06_coding/work_06_coding_02_skin_rx_full.jpg);*/
+	background-image: url(https://tistory4.daumcdn.net/tistory/1669583/skin/images/work_06_coding_02_skin_rx_full.jpg);
+	margin-bottom: 100px;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.4);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*------------lightbox-----------------*/
+.contents_box {
+	position: relative;
+}
+.contents_box > a,
+.contents_box > a img{
+	display: block;
+}
+.contents_box > a span{
+	width: 1280px;
+	position: absolute;top: 0%; left: 50%;
+	transform: translateX(-50%);
+	background-color: red;
+	text-align: center;
+	padding: 238.5px 0;
+	color: white;
+	font-size: 24px;
+	opacity: 0; 
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+	background: #4687a1;
+	-webkit-transition: opacity 0.3s linear;
+	-moz-transition: opacity 0.3s linear;
+	-o-transition: opacity 0.3s linear;
+	-ms-transition: opacity 0.3s linear;
+	transition: opacity 0.3s linear;
+}
+.contents_box > a:hover span{
+	opacity: 0.75;
+	filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+}
+.lb-overlay{
+	width: 0px;height: 0px;
+	position: fixed;
+	overflow:scroll;
+	left: 0px;
+	top: 0px;padding: 0px;
+	z-index: 99;
+	text-align: center;
+	background: #fff;
+}
+.lb-overlay img {clear:both;margin:5px;}
+.lb-overlay a.lb-close{
+	z-index: 1001;color:#4687a1;
+	position: absolute;top: 43px;left: 50%;
+	font-size: 36px;line-height: 36px;
+	text-align: center;
+	width: 50px;height: 50px;
+	overflow: hidden;
+	margin-left: -25px;
+	opacity: 0;
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+	-webkit-transition: opacity 0.3s linear 1.2s;
+	-moz-transition: opacity 0.3s linear 1.2s;
+	-o-transition: opacity 0.3s linear 1.2s;
+	-ms-transition: opacity 0.3s linear 1.2s;
+	transition: opacity 0.3s linear 1.2s;
+}
+.lb-overlay img{
+	/* height: 100%; For Opera max-height does not seem to work */
+	width: 90%;
+	position: relative;
+	-webkit-box-shadow: 0px 2px 7px black;
+	-moz-box-shadow: 0px 2px 7px black;
+	box-shadow: 0px 2px 7px black;
+}
+.lb-overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 0px;
+	right: 0px;
+	padding: 80px 100px 120px 100px;
+}
+.lb-overlay:target img {
+	-webkit-animation: fadeInScale 1.2s ease-in-out;
+	-moz-animation: fadeInScale 1.2s ease-in-out;
+	-o-animation: fadeInScale 1.2s ease-in-out;
+	-ms-animation: fadeInScale 1.2s ease-in-out;
+	animation: fadeInScale 1.2s ease-in-out;
+}
+.lb-overlay:target a.lb-close,
+.lb-overlay:target > div{
+	opacity: 1;
+	filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+}
+@-webkit-keyframes fadeInScale {
+  0% { -webkit-transform: scale(0.6); opacity: 0; }
+  100% { -webkit-transform: scale(1); opacity: 1; }
+}
+@-moz-keyframes fadeInScale {
+  0% { -moz-transform: scale(0.6); opacity: 0; }
+  100% { -moz-transform: scale(1); opacity: 1; }
+}
+@-o-keyframes fadeInScale {
+  0% { -o-transform: scale(0.6); opacity: 0; }
+  100% { -o-transform: scale(1); opacity: 1; }
+}
+@-ms-keyframes fadeInScale {
+  0% { -ms-transform: scale(0.6); opacity: 0; }
+  100% { -ms-transform: scale(1); opacity: 1; }
+}
+@keyframes fadeInScale {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}

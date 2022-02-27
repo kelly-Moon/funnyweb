@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+#container .contents_box {width: 960px;height: 1200px;}
+.work01_01 {
+	width: 538px;height: 542px;
+	background-image: url(../img/work_01_illustrator/work_01_illustrator_1.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	float: left;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.4);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.work01_01_mockup {
+	width: 370px;
+	height: 444px;
+	background-image: url(../img/work_01_illustrator/work_01_illustrator_mockup_1.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	float: left;
+	margin: 150px 0 0px 50px;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.4);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.work01_02_mockup {
+	width: 370px;
+	height: 444px;
+	background-image: url(../img/work_01_illustrator/work_01_illustrator_mockup_2.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	float: left;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.4);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.work01_02 {
+	width: 538px;
+	height: 538px;
+	background-image: url(../img/work_01_illustrator/work_01_illustrator_2.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	float: left;
+	margin: 50px 0 100px 50px;box-shadow: 1px 1px 8px rgba(0,0,0,.4);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

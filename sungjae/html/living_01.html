@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JOE.POLIO</title>
+    <link rel="shortcut icon" href="../img/cat.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="stylesheet" href="../css/living_01.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header>
+        <a href="../index.html" class="main_page">MAIN</a>
+        <div class="nav">
+            <a href="../html/living_01.html" class="gnb01">ASPEN</a>
+            <a href="../html/living_02.html" class="gnb02">WORK</a>
+        <!--<a href="../html/visual_03.html" class="gnb03">EVENT</a>-->
+            
+        </div>
+    </header>
+    <div class="toggle">
+        <div class="toggle_line"></div>
+        <div class="toggle_line"></div>
+        <div class="toggle_line"></div>
+    </div>
+    <div class="toggle_menu">
+        <a href="../html/web_01.html" class="tggl_menu_01">WEB</a>
+        <a href="../html/visual_01.html" class="tggl_menu_02">VISUAL</a>
+        <a href="../html/uxui_01.html" class="tggl_menu_03">UX/UI</a>
+        <a href="../html/living_01.html" class="tggl_menu_03">LIVING</a>
+        <a href="../html/bici_01.html" class="tggl_menu_03">BI/CI</a>
+    </div>
+
+    <div class="body_wrap" id="top">
+        
+
+        <div class="contents">
+            <div class="txt_main">ASPEN</div>
+            <div class="txt_sub">리빙디자인 졸업전시회 프로젝트</div>
+            
+        </div>
+        <div class="contact">
+            <div class="txt_cntct01">1997.03.01.</div>
+            <div class="txt_cntct02">조성재</div>
+            <div class="txt_cntct03">Living, Web, Visual</div>
+        </div>
+
+    </div>
+    <div class="info_wrap">
+        <div class="container">
+            <div class="contents_top">
+                <div class="ctt_top_left">
+                    <div class="top_left_num">01</div>
+                    <div class="link_box">
+                        <span href="#" class="top_left_link">
+                            ASPEN 프로젝트
+                            
+                        </span>
+                    </div>
+                    
+                    <div class="top_left_txt01">
+                        <div class="txt01_top">Concept</div>
+                        <div class="txt01_bot">제품디자인, 상호작용, 생동적인, 사물과의 양방향 상호작용 </div>
+                    </div>
+                    <div class="top_left_txt02">
+                        <div class="txt02_top">About</div>
+                        <div class="txt02_bot">
+                        사람을 사물을 사용할 때 그저 '입력'하기만 합니다. 사람의 '입력'을 받은 사물은 그저 동작할 뿐입니다. <br> ASPEN은 그러한 단조로운 일상의 제품에서 벗어나 사물을 사용할 때 사물에게서 반응 즉 '상호작용'을 가능하게 한 생동감있는 제품입니다.
+                        </div>
+                    </div>
+                    <div class="top_left_txt03">
+                        <div class="txt03_top">Info</div>
+                        <div class="txt03_bot">
+                            제작기간 : 약 1년 (2016.11.01. - 2017.11.01.)
+                        </div>
+                    </div>
+                </div>
+                <div class="ctt_top_right">
+                    <div class="top_right_img01"></div>
+                </div>
+            </div>
+            <div class="contents_bottom">
+                <div class="ctt_bot_left">
+                    <img src="../img/living_01_img02.png" alt="">
+                </div>
+                <div class="ctt_bot_right">
+                    <img class="bot_right_01" src="../img/living_01_img03.png" alt="">
+                    <img class="bot_right_02" src="../img/living_01_img04.png" alt="">
+                    
+                </div>
+            </div>
+            <div class="contents_box">
+                <div class="con_box_txt01">
+                    사물의 상호작용<br>
+                    제품의 또다른 가능성
+                </div>
+                <div class="con_box_txt02">ASPEN</div>
+            </div>
+            <a href="#top" class="top_button">TOP</a>
+        </div>
+        
+        
+        
+    </div>
+    
+    
+    <footer>
+        <div class="foot_email">djangoddango@kakao.com</div>
+    </footer>
+        
+        
+        
+        
+        
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <script>
+        $(function() {
+            $('.toggle').click(function() {
+                $('.toggle_line:first-of-type').toggleClass('toggleclass01')
+                $('.toggle_line:last-of-type').toggleClass('toggleclass02')
+                $('.toggle_line:nth-of-type(2)').toggleClass('toggleclass03')
+                $('.toggle_menu').toggleClass('toggle_menu_js')
+                $('.toggle_menu a').toggleClass('toggle_menu_div_js')
+            });
+        });
+    </script>
+
+    <script>
+        $(window).scroll(function() {
+
+            if ($(this).scrollTop() > 680) {
+                $(".contact").css('display', 'none');
+            } else {
+                $(".contact").css('display', 'block');
+            }
+        });
+    </script>
+    <script>
+        $(window).scroll(function() {
+
+            if ($(this).scrollTop() > 380) {
+
+                $("header").css('background', '#222');
+                $(".nav a").css('color', '#fff');
+                $(".main_page").css('color', '#fff');
+            } else {
+
+                $("header").css('background', 'none');
+                 $(".nav a").css('color', '#222');
+                $(".main_page").css('color', '#222');
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a.top_button").anchorAnimate()
+        });
+        jQuery.fn.anchorAnimate = function(settings) {
+            settings = jQuery.extend({
+                speed: 500
+            }, settings);
+            return this.each(function() {
+                var caller = this
+                $(caller).click(function(event) {
+                    event.preventDefault()
+                    var locationHref = window.location.href
+                    var elementClick = $(caller).attr("href")
+                    var destination = $(elementClick).offset().top;
+                    $("html:not(:animated),body:not(:animated)").animate({
+                        scrollTop: destination
+                    }, settings.speed, function() {
+                        window.location.hash = elementClick
+                    });
+                    return false;
+                })
+            })
+        }
+    </script>
+</body>
+
+</html>

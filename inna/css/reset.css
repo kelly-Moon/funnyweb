@@ -1,0 +1,18 @@
+/*reset*/
+body, div, dl, dd, dt, ul, li, ol, h1, h2, h3, h4, h5, h6, form, input,legend, textarea, select, fieldset, p, button {margin: 0; padding: 0;}
+a { text-decoration: none; transition-duration: .7s;}
+img {border: 0;}
+body, input, textarea, select, button, table {	
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 14px; line-height: 1.7em;}
+h1, h2, h3, h4, h5, h6 { font-size: 14px; font-weight: normal; }
+li, ol, ul {list-style: none;}
+/*ir*/
+.ir { width: 0; height: 0; font-size: 0; line-height: 0; overflow: hidden; position: absolute; left: 0; top: 0; }
+/*scrollbar*/
+::-webkit-scrollbar {width: 12px; height: 12px; border: 3px solid #fff; }
+::-webkit-scrollbar-button:start:decrement, 
+::-webkit-scrollbar-button:end:increment { display: block; height: 10px; background:#FFF;}
+::-webkit-scrollbar-track {background:#FFF;}
+::-webkit-scrollbar-thumb {height: 50px; width: 50px; background: rgba(70,135,161,.5);}
+/**/

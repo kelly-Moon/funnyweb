@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JOE.POLIO</title>
+    <link rel="shortcut icon" href="../img/cat.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="stylesheet" href="../css/visual_03.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header>
+        <a href="../index.html" class="main_page">MAIN</a>
+        <div class="nav">
+            <a href="../html/visual_01.html" class="gnb01">BANNER</a>
+            <a href="../html/visual_02.html" class="gnb02">EVENT</a>
+            <a href="../html/visual_03.html" class="gnb03">MAIL</a>
+        </div>
+    </header>
+    <div class="toggle">
+        <div class="toggle_line"></div>
+        <div class="toggle_line"></div>
+        <div class="toggle_line"></div>
+    </div>
+    <div class="toggle_menu">
+        <a href="../html/web_01.html" class="tggl_menu_01">WEB</a>
+        <a href="../html/visual_01.html" class="tggl_menu_02">VISUAL</a>
+        <a href="../html/uxui_01.html" class="tggl_menu_03">UX/UI</a>
+        <a href="../html/living_01.html" class="tggl_menu_03">LIVING</a>
+        <a href="../html/bici_01.html" class="tggl_menu_03">BI/CI</a>
+    </div>
+
+    <div class="body_wrap" id="top">
+        
+
+        <div class="contents">
+            <div class="txt_main">BANNER</div>
+            <div class="txt_sub">여행어플 트리플 배너 디자인</div>
+            
+        </div>
+        <div class="contact">
+            <div class="txt_cntct01">1997.03.01.</div>
+            <div class="txt_cntct02">조성재</div>
+            <div class="txt_cntct03">Living, Web, Visual</div>
+        </div>
+
+    </div>
+    <div class="info_wrap">
+        <div class="container">
+            <div class="contents_top">
+                <div class="ctt_top_left">
+                    <div class="top_left_num">03</div>
+                    <div class="link_box">
+                        <span href="#" class="top_left_link">
+                            웹 메일 디자인
+                            
+                        </span>
+                    </div>
+                    
+                    <div class="top_left_txt01">
+                        <div class="txt01_top">Concept</div>
+                        <div class="txt01_bot">아이디어스, 밝은, 정보전달, 홍보, 스팸 </div>
+                    </div>
+                    <div class="top_left_txt02">
+                        <div class="txt02_top">About</div>
+                        <div class="txt02_bot">
+                        아이디어스 홍보 웹메일 컨셉의 프로젝트로 정보전달, 홍보가 목적인 만큼 정보의 배치와 식상함을 주지 않는 색감으로 디자인
+                        </div>
+                    </div>
+                    <div class="top_left_txt03">
+                        <div class="txt03_top">Info</div>
+                        <div class="txt03_bot">
+                            제작기간 : 16시간 (2021.03.25. - 2021.03.26.)
+                        </div>
+                    </div>
+                </div>
+                <div class="ctt_top_right">
+                    <div class="top_right_img01"></div>
+                    <div class="top_right_img02"></div>
+                    <div class="top_right_img03"></div>
+                </div>
+            </div>
+            <div class="contents_bottom">
+                <div class="ctt_bot_left">
+                    <div class="bot_left_01"></div>
+                    <div class="bot_left_02"></div>
+                </div>
+                <div class="ctt_bot_right">
+                    <div class="bot_right_01"></div>
+                    <div class="bot_right_02"></div>
+                </div>
+            </div>
+            <div class="contents_box">
+                <div class="con_box_txt01">
+                    아이디어스<br>
+                    웹메일 디자인
+                </div>
+                <div class="con_box_txt02">MAIL</div>
+            </div>
+            <a href="#top" class="top_button">TOP</a>
+        </div>
+        
+        
+        
+    </div>
+    
+    
+    <footer>
+        <div class="foot_email">djangoddango@kakao.com</div>
+    </footer>
+        
+        
+        
+        
+        
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <script>
+        $(function() {
+            $('.toggle').click(function() {
+                $('.toggle_line:first-of-type').toggleClass('toggleclass01')
+                $('.toggle_line:last-of-type').toggleClass('toggleclass02')
+                $('.toggle_line:nth-of-type(2)').toggleClass('toggleclass03')
+                $('.toggle_menu').toggleClass('toggle_menu_js')
+                $('.toggle_menu a').toggleClass('toggle_menu_div_js')
+            });
+        });
+    </script>
+
+    <script>
+        $(window).scroll(function() {
+
+            if ($(this).scrollTop() > 680) {
+                $(".contact").css('display', 'none');
+            } else {
+                $(".contact").css('display', 'block');
+            }
+        });
+    </script>
+    <script>
+        $(window).scroll(function() {
+
+            if ($(this).scrollTop() > 380) {
+
+                $("header").css('background', '#222');
+                $(".nav a").css('color', '#fff');
+                $(".main_page").css('color', '#fff');
+            } else {
+
+                $("header").css('background', 'none');
+                 $(".nav a").css('color', '#222');
+                $(".main_page").css('color', '#222');
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a.top_button").anchorAnimate()
+        });
+        jQuery.fn.anchorAnimate = function(settings) {
+            settings = jQuery.extend({
+                speed: 500
+            }, settings);
+            return this.each(function() {
+                var caller = this
+                $(caller).click(function(event) {
+                    event.preventDefault()
+                    var locationHref = window.location.href
+                    var elementClick = $(caller).attr("href")
+                    var destination = $(elementClick).offset().top;
+                    $("html:not(:animated),body:not(:animated)").animate({
+                        scrollTop: destination
+                    }, settings.speed, function() {
+                        window.location.hash = elementClick
+                    });
+                    return false;
+                })
+            })
+        }
+    </script>
+</body>
+
+</html>

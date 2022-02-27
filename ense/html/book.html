@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>leeeunse</title>
+	<link rel="stylesheet" href="../css/book.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="../css/cssfont/font.css">
+	<link rel="shortcut icon" href="../img/favicon.ico">
+	<!-- Demo CSS -->
+	
+	<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+
+	<!-- Modernizr -->
+  <script src="../js/modernizr.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="header">
+			<a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+			<ul id="menu">
+				<li><a href="about.html">About</a></li>
+				<li><a href="works1.html">Works1</a></li>
+				<li><a href="works2.html">Works2</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+
+<!------------------------------------------->
+		<div class="box">
+			<div class="sub_menu">
+				<ul>
+					<li><a href="campuslife.html">illust graphic poster</a></li>
+					<li><a href="collage.html">collage artwork</a></li>
+					<li><a href="vans.html">magazine ad</a></li>
+					<li><a href="book.html">book design</a></li>
+					<li><a href="ksj.html">graduation exhibition</a></li>
+				</ul>
+			</div>
+			<button onclick="myFunction()"></button>
+
+			<!-- <div class="book"><img src="../img/book.jpg" alt="book"></div> -->
+			<div class="book">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<img src="../img/book1.jpg" alt="book1">
+						</li>
+						<li>
+							<img src="../img/book2.jpg" alt="book2">
+						</li>
+						<li>
+							<img src="../img/book3.jpg" alt="book3">
+						</li>
+						<li>
+							<img src="../img/book4.jpg" alt="book4">
+						</li>
+						<li>
+							<img src="../img/book5.jpg" alt="book5">
+						</li>
+						<li>
+							<img src="../img/book6.jpg" alt="book6">
+						</li>
+						<li>
+							<img src="../img/book7.jpg" alt="book7">
+						</li>
+						<li>
+							<img src="../img/book8.jpg" alt="book8">
+						</li>
+						<li>
+							<img src="../img/book9.jpg" alt="book9">
+						</li>
+						<li>
+							<img src="../img/book10.jpg" alt="book10">
+						</li>
+						<li>
+							<img src="../img/book11.jpg" alt="book11">
+						</li>
+						<li>
+							<img src="../img/book12.jpg" alt="book12">
+						</li>
+						<li>
+							<img src="../img/book13.jpg" alt="book13">
+						</li>
+						<li>
+							<img src="../img/book14.jpg" alt="book14">
+						</li>
+						<li>
+							<img src="../img/book15.jpg" alt="book15">
+						</li>
+						<li>
+							<img src="../img/book16.jpg" alt="book16">
+						</li>
+						<li>
+							<img src="../img/book17.jpg" alt="book17">
+						</li>
+						<li>
+							<img src="../img/book18.jpg" alt="book18">
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="book_mockup"><img src="../img/book_mockup.jpg" alt="book_mockup"></div>
+		</div>
+	<!------------------>
+		<div class="info_box" id="demo">
+			<button class="x" onclick="myFunction2()">x</button>
+			<ul>
+				<li class="name"><span>Book Design</span>_862 x 598 pixel</li>
+				<li class="date">2017. 06.</li>
+				<li class="line">ㅡ</li>
+				<li class="name2">MOOD BOOK</li>
+				<li class="info">좋아하는 사진들과 노래 가사로 채운 감성책이다.<br>무엇을 전달하려 하기보단 한 페이지 한 페이지 글들과 사진을 보며<br>편안하고 따뜻한 감성을 느끼길 바라는 마음으로 만들었다.</li>
+			</ul>
+		</div>
+<!--------------------------------------->
+
+		<div id="footer">
+			copyright &copy; 2018 eunselee. All rights reserved.
+		</div>
+	</div>
+
+	<script>
+		function myFunction() {
+    	document.getElementById("demo").style.display = "block";
+		}
+	</script>
+	<script>
+		function myFunction2() {
+    	document.getElementById("demo").style.display = "none";
+		}
+	</script>
+
+	<!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+  <!-- FlexSlider -->
+  <script defer src="../js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

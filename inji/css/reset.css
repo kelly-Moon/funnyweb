@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button{
+ margin:0;
+ padding:0;
+ border:none; 
+}
+body{
+ font-family: 'Yrsa', serif;
+ font-size:14px;
+ color:#0056e1;
+}
+li{
+ list-style:none;
+}
+a{
+ color:#0056e1;
+ text-decoration:none; 
+}
+img{
+ vertical-align:top;
+}
+img,fieldset,iframe{
+ border:0 none;
+}
+
+
+/*ir*/
+.ir { width: 0; height: 0; font-size: 0; line-height: 0; overflow: hidden; position: absolute; left: 0; top: 0; }
+
+/* yrsa-regular - latin */
+@font-face {
+  font-family: 'Yrsa';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/yrsa-v4-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Yrsa Regular'), local('Yrsa-Regular'),
+       url('../fonts/yrsa-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/yrsa-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/yrsa-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/yrsa-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/yrsa-v4-latin-regular.svg#Yrsa') format('svg'); /* Legacy iOS */
+}
+/* yrsa-500 - latin */
+@font-face {
+  font-family: 'Yrsa';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/yrsa-v4-latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Yrsa Medium'), local('Yrsa-Medium'),
+       url('../fonts/yrsa-v4-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/yrsa-v4-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/yrsa-v4-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/yrsa-v4-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/yrsa-v4-latin-500.svg#Yrsa') format('svg'); /* Legacy iOS */
+}
+/* yrsa-600 - latin */
+@font-face {
+  font-family: 'Yrsa';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/yrsa-v4-latin-600.eot'); /* IE9 Compat Modes */
+  src: local('Yrsa SemiBold'), local('Yrsa-SemiBold'),
+       url('../fonts/yrsa-v4-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/yrsa-v4-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/yrsa-v4-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/yrsa-v4-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/yrsa-v4-latin-600.svg#Yrsa') format('svg'); /* Legacy iOS */
+}
+/* yrsa-700 - latin */
+@font-face {
+  font-family: 'Yrsa';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/yrsa-v4-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Yrsa Bold'), local('Yrsa-Bold'),
+       url('../fonts/yrsa-v4-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/yrsa-v4-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/yrsa-v4-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/yrsa-v4-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/yrsa-v4-latin-700.svg#Yrsa') format('svg'); /* Legacy iOS */
+}
+
+/* abril-fatface-regular - latin */
+@font-face {
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/abril-fatface-v10-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Abril Fatface'), local('AbrilFatface-Regular'),
+       url('../fonts/abril-fatface-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/abril-fatface-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/abril-fatface-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/abril-fatface-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/abril-fatface-v10-latin-regular.svg#AbrilFatface') format('svg'); /* Legacy iOS */
+}
+
+/* nanum-gothic-regular - korean_latin */
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/nanum-gothic-v16-korean_latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('NanumGothic'),
+       url('../fonts/nanum-gothic-v16-korean_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/nanum-gothic-v16-korean_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/nanum-gothic-v16-korean_latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/nanum-gothic-v16-korean_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/nanum-gothic-v16-korean_latin-regular.svg#NanumGothic') format('svg'); /* Legacy iOS */
+}
+/* nanum-gothic-700 - korean_latin */
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/nanum-gothic-v16-korean_latin-700.eot'); /* IE9 Compat Modes */
+  src: local('NanumGothic Bold'), local('NanumGothic-Bold'),
+       url('../fonts/nanum-gothic-v16-korean_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/nanum-gothic-v16-korean_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/nanum-gothic-v16-korean_latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/nanum-gothic-v16-korean_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/nanum-gothic-v16-korean_latin-700.svg#NanumGothic') format('svg'); /* Legacy iOS */
+}
+/* nanum-gothic-800 - korean_latin */
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/nanum-gothic-v16-korean_latin-800.eot'); /* IE9 Compat Modes */
+  src: local('NanumGothic ExtraBold'), local('NanumGothic-ExtraBold'),
+       url('../fonts/nanum-gothic-v16-korean_latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/nanum-gothic-v16-korean_latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/nanum-gothic-v16-korean_latin-800.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/nanum-gothic-v16-korean_latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/nanum-gothic-v16-korean_latin-800.svg#NanumGothic') format('svg'); /* Legacy iOS */
+}

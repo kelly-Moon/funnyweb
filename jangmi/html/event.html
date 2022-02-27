@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>event</title>
+	<link rel="stylesheet" href="../css/event.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<!--menu-->
+	<link rel="stylesheet" type="text/css" href="../css/menu_style2.css">
+	<!--무브탑버튼-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+	<!--메뉴-->
+	<div class="button_container" id="toggle">
+		<span class="top"></span>
+	  	<span class="middle"></span>
+	  	<span class="bottom"></span>
+	</div>
+	<div class="overlay" id="overlay">
+		<nav class="overlay-menu">
+	   		<ul>
+	   			<li><a href="../index.html">Home</a></li>
+	   			<li><a href="html/about.html">About</a></li>
+	   			<li><a href="html/design.html">Design</a></li>
+	   			<li><a href="html/publishing.html">Publishing</a></li>
+	   			<li><a href="html/contact.html">Contact</a></li>
+	   		</ul>
+		</nav>
+	</div>
+	<!--//메뉴-->
+
+	<div id="container">
+		<div id="sub_img">
+		</div>
+		<!--//빛이미지-->
+		<div class="nav">
+			<ul>
+				<li><a href="#">Illustation</a></li>
+				<li><a href="banner.html">Banner</a></li>
+				<li><a href="event.html">Event</a></li>
+				<li><a href="webmail.html">Web-mail</a></li>
+				<li><a href="promotion.html">Promotion</a></li>
+				<li><a href="onandon.html">On&amp;On</a></li>
+				<li><a href="skinrx.html">SkinRX</a></li>
+				<li><a href="redesign.html">Redesign</a></li>
+				<li><a href="project.html">Project</a></li>
+			</ul>
+		</div>
+		<div class="section1">
+			<div class="content1"></div>
+			<div class="content4"></div>
+		</div>
+		<div class="section2">
+			<div class="text1">
+				<h2>전시회 초대권 이벤트</h2>
+				<p>미술관 소개 : 디뮤지엄은 한국 최초의 사진 전문 미술관인 한림미술관이 전신인</p>
+			</div>
+			<div class="text2">
+				<p>Concept</p>
+			</div>
+			<div class="text3">
+				<p>
+					대림미술관의 부속관 중 하나로써 현대 사진과 일상 속 예술이 된 디자인을 창의적이고 다양하게 소개하고 있습니다.전시 규모는 작지만 감각적인 전시가 충분히 매력적입니다.       
+				</p>
+			</div>
+			<div class="text4">
+				<p>
+					작품 컨셉 : 메뉴(TEA)의 주재료가 되는 꽃을 배경으로 하여 달콤하고 신선한 향이 느껴질 수 있도록 제작하였습니다. 자연과 정성을 담은 오설록만의 자연주의 브랜드 이미지를 강조하였습니다.
+				</p>
+			</div>
+		</div>
+	</div>
+	<!--topbutton-->
+	<a id="move_top" href="#">
+		<img src="../img/top.png" alt="move top button">
+	</a>
+	<!--//topbutton-->
+	<div id="footer">
+		<p>&copy;2018 jangmi</p>
+	</div>
+</div>
+
+<!--메뉴-->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+		  
+		  <script>
+		    $('#toggle').click(function() {
+		        $(this).toggleClass('active');
+		        $('#overlay').toggleClass('open');
+		      });
+		  </script>	
+
+<!--무브탑버튼-->
+		  	<script>
+	    $(function() {
+	        $(window).scroll(function() {
+	            if ($(this).scrollTop() > 300) {
+	                $('#move_top').fadeIn();
+	            } else {
+	                $('#move_top').fadeOut();
+	            }
+	        });
+	        
+	        $("#move_top").click(function() {
+	            $('html, body').animate({
+	                scrollTop : 0
+	            }, 400);
+	            return false;
+	        });
+	    });
+	</script>		
+</body>
+</html>

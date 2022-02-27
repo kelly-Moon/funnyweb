@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>onandon</title>
+	<link rel="stylesheet" href="../css/onandon.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<!--menu-->
+	<link rel="stylesheet" type="text/css" href="../css/menu_style2.css">
+	<!--무브탑버튼-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+	<!--메뉴-->
+	<div class="button_container" id="toggle">
+		<span class="top"></span>
+	  	<span class="middle"></span>
+	  	<span class="bottom"></span>
+	</div>
+	<div class="overlay" id="overlay">
+		<nav class="overlay-menu">
+	   		<ul>
+	   			<li><a href="../index.html">Home</a></li>
+	   			<li><a href="../html/about.html">About</a></li>
+	   			<li><a href="../html/design.html">Design</a></li>
+	   			<li><a href="../html/publishing.html">Publishing</a></li>
+	   			<li><a href="../html/contact.html">Contact</a></li>
+	   		</ul>
+		</nav>
+	</div>
+	<!--//메뉴-->
+
+	<div id="container">
+		<div id="sub_img">
+		</div>
+		<!--//빛이미지-->
+		<div class="nav">
+			<ul>
+				<li><a href="#">Illustation</a></li>
+				<li><a href="banner.html">Banner</a></li>
+				<li><a href="event.html">Event</a></li>
+				<li><a href="webmail.html">Web-mail</a></li>
+				<li><a href="promotion.html">Promotion</a></li>
+				<li><a href="onandon.html">On&amp;On</a></li>
+				<li><a href="skinrx.html">SkinRX</a></li>
+				<li><a href="redesign.html">Redesign</a></li>
+				<li><a href="project.html">Project</a></li>
+			</ul>
+		</div>
+		<div class="section1">
+			<div class="content1"></div>
+		</div>
+		<div class="section2">
+			<div class="title">
+				<h2>웹코딩 기초</h2>
+			</div>
+			<div class="sitelink">
+				<a href="http://mi1130.dothome.co.kr/onandon" target="_blank"><p>사이트 바로가기</p></a>
+			</div>
+			<div class="text1">
+				<p>미술관 소개 : 서울시를 대표하는 미술관인 서울시립미술관은 전문성과 대중성</p>
+			</div>
+			<div class="text2">
+				<p>Concept</p>
+			</div>
+			<div class="text3">
+				<p>
+					을 적절히 조화시키는 전시로 유명합니다. 샤갈, 피카소, 마그리트 등 세계 유명 화가들의 전시는 물론 미디어아트비엔날레 같은 특색 있는 기획 전시도 선보이고 있습니다.            
+				</p>
+			</div>
+			<div class="text4">
+				<p>
+					작품 컨셉 : 서울시립미술관(SEMA)의 홈페이지를 리디자인 하였습니다. 기존의 사이트도 특색이 있었지만 정보를 보기 쉽지 않은 점이 있었습니다. 레이아웃에 다양한 변화를 주는 것으로 기획 전시와  상설 전시를 함께 선보이는 시립미술관의 특색을 살리면서도 정보를 한눈에 볼 수 있도록 하였습니다.   
+				</p>
+			</div>
+		</div>
+		<!--topbutton-->
+		<a id="move_top" href="#">
+			<img src="../img/top.png" alt="move top button">
+		</a>
+		<!--//topbutton-->
+	</div>
+	<div id="footer">
+		<p>&copy;2018 jangmi</p>
+	</div>
+</div>
+
+<!--메뉴-->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+		  
+		  <script>
+		    $('#toggle').click(function() {
+		        $(this).toggleClass('active');
+		        $('#overlay').toggleClass('open');
+		      });
+		  </script>	
+
+<!--무브탑버튼-->
+		  	<script>
+	    $(function() {
+	        $(window).scroll(function() {
+	            if ($(this).scrollTop() > 300) {
+	                $('#move_top').fadeIn();
+	            } else {
+	                $('#move_top').fadeOut();
+	            }
+	        });
+	        
+	        $("#move_top").click(function() {
+	            $('html, body').animate({
+	                scrollTop : 0
+	            }, 400);
+	            return false;
+	        });
+	    });
+	</script>		
+</body>
+</html>

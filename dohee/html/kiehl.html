@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIM DO HEE</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="../css/kiehl.css">
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/font-kopub@1.0/kopubdotum.min.css'>
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="artwork_bg">
+        <div class="nav">
+            <ul class="gnb">
+                <li><a href="../index.html">HOME</a></li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li class="underbar">
+                    <a href="work.html">WORK</a>
+                    <ul class="dropdown">
+                        <li><a href="artwork.html">GRAPHIC</a></li>
+                        <li><a href="web_mail.html">WEB</a></li>
+                        <li><a href="kiehl.html">WEB SITE</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="contents">
+            <div class="main_title">
+                <h1>WEB SITE</h1>
+            </div>
+            <div class="main_txt">
+                <h2>Kiehl Site Redesign (Reponsive)</h2>
+                <p>키엘 사이트 리디자인 (반응형)</p>
+                <a href="../kiehl/index.html" target="_blank"><button class="btn">
+                Go To Site</button></a>
+            </div>
+            <div class="main_img">
+                <a href="../kiehl/index.html" target="_blank"><img src="../img/kiehl_01.jpg" alt=""></a>
+                
+            </div>
+            <div class="sub_txt">
+                <h3>Analysis</h3>
+                <p>해외 화장품 브랜드 키엘을 선정해 반응형 웹디자인을 제작하였습니다.<br>
+                    공식 홈페이지의 문제점을 고안해 브랜드만의 특색을 살리는 방향으로 <br>
+                    진행했습니다. 상단엔 텍스트 대신 아이콘을 삽입했고,베스트 셀러, <br>
+                    신제품, 아보카도 라인, 케어별 순으로 컨텐츠를 나눠 작업했습니다.<br>
+                    또한 반응형 웹사이트로서 PC(1920px), Tablet(1200px),<br>
+                    Mobile(900~600px)로도 구동이 가능하도록 하였습니다.
+                </p>
+            </div>
+            <div class="line"></div>
+            <div class="txt_line"></div>
+            <div class="center_line"></div>
+            <div class="center_circle"></div>
+            <div class="line_02"></div>
+            
+            <div class="detail_txt">
+                <h2>Kiehl Detailed</h2>
+            </div>
+            <div class="detail_txt_02">
+                <span>PC(1920px)</span>
+            </div>
+            <div class="detail_txt_03">
+                <span>Tablet(1200px)</span>
+            </div>
+            <div class="detail_img">
+                <img src="../img/kiehl_02.jpg" alt="">
+                <img src="../img/kiehl_03.jpg" alt="">
+            </div>
+           
+        </div>
+        <!--contents-->
+        
+        <div class="arrow_icon">
+            <div class="arrow_01">
+                <a href="app.html"><span class="material-icons md-48 color">&#xe5e0;</span></a>
+            </div>
+            <div class="arrow_02">
+                <a href="sobaek.html"><span class="material-icons md-48 color">&#xe5e1;</span></a>
+            </div>
+        </div>
+        
+         <div id="footer">
+            <p>© 2021 KIM DO HEE Portfolio |  All rights reserved.</p>
+        </div>
+        <!--footer-->
+        
+        <div id="top_icon">
+            <a href="#artwork_bg" class="top_btn">
+            <img src="../img/arrow.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!--artwork_bg-->
+
+<script type="text/javascript">
+ $(document).ready(function() {
+    $("a.top_btn").anchorAnimate()
+ });
+ jQuery.fn.anchorAnimate = function(settings) {
+    settings = jQuery.extend({
+    speed : 500
+    }, settings);    
+    return this.each(function(){
+    var caller = this
+    $(caller).click(function (event) {    
+    event.preventDefault()
+    var locationHref = window.location.href
+    var elementClick = $(caller).attr("href")
+    var destination = $(elementClick).offset().top;
+    $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() 
+    {
+    window.location.hash = elementClick
+    });
+     return false;
+    })
+    })
+ }
+</script>
+
+</body>
+</html>

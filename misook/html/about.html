@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MISUK's Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="../css/index_style01.css">
+    <link rel="stylesheet" type="text/css" href="../css/onepage-scroll.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="shortcut icon" href="../img/POT.ico">
+
+	<!--메뉴-->
+ 	<link rel="stylesheet" type="text/css" href="../css/menu_style.css">
+  <style>
+    .onepage-pagination { z-index: 0;}
+  </style>
+
+
+</head>
+<body>
+
+<!--메뉴-->
+<div class="button_container" id="toggle">
+  <span class="top"></span>
+  <span class="middle"></span>
+  <span class="bottom"></span>
+</div>
+
+<div class="overlay" id="overlay">
+  <nav class="overlay-menu">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../html/about.html">About Me</a></li>
+      <li><a href="../html/work.html">Work</a></li>
+      <li><a href="../html/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+<div id="wrapper">
+  <div id="main" class="main">
+
+
+    <section id="page2">
+      <div class="number1">01</div>
+      <div class="container_bg">
+        <div class="box_page2">
+          <p class="name_birth">BONG MI SUK<br>1994.05.13</p>
+          <p class="acodemic">2018.08 신한대학교 국제어학과 졸업예정<br>2018.01~05 천호 더조은 컴퓨터 아트학원 UI/UX 디자인</p>
+          <div class="graph_box">
+            <ul class="graph">
+              <li>Word</li>
+              <li>Photoshop</li>
+              <li>Illustration</li>
+              <li>Html / Css</li>
+            </ul>
+            <ul class="box_par">
+              <li class="box1"></li>
+              <li class="box2"></li>
+              <li class="box3"></li>
+              <li class="box4"></li>
+            </ul>
+            <ul class="percent">
+              <li>75%</li>
+              <li>90%</li>
+              <li>75%</li>
+              <li>80%</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    </section>
+
+
+
+
+
+  </div>
+</div>
+
+
+
+<!--메뉴-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+  
+  <script>
+    $('#toggle').click(function() {
+        $(this).toggleClass('active');
+        $('#overlay').toggleClass('open');
+      });
+  </script>
+
+
+<!--원페이지스크롤-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../jquery/jquery.onepage-scroll.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+    });
+    
+  </script>
+
+</body>
+</html>

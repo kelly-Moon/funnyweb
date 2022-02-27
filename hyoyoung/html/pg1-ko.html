@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Once Newyorker</title>
+    <link rel="shortcut icon" href="../img/favi.ico">
+<!--    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/detail_page.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">
+    
+     <style>
+       
+       body main {
+           transition: all 250ms ease-in-out;
+           filter: blur(0px);
+           width: 100vw;height: 100vh;
+           margin: 0;padding: 0;
+       }
+
+       body.modally-open main {
+           filter: blur(5px);
+       }
+
+       .button.small {
+           opacity: 0;
+           cursor: pointer;
+           height: 56px;
+           line-height: 54px;
+           padding-left: 24px;
+           padding-right: 24px;
+           box-sizing: border-box;
+           display: inline-block;
+           border-radius: 4px;
+           text-align: center;
+           text-decoration: none;
+           outline: none;
+           vertical-align: middle;
+           font-weight: bold;
+           transition: all 250ms ease-in-out;
+           border: solid 1px #ff9a9e;
+           font-size: 12px;
+           letter-spacing: 2px;
+           text-transform: uppercase;
+           color: #ff9a9e;
+       }
+
+       .button.icon i {
+           margin-right: 8px;
+       }
+
+       .modally-wrap.open:not(.last) {
+           filter: blur(5px);
+       }
+
+       .modally .button-wrap {
+           text-align: right;
+       }
+
+       .modally .button-wrap .button {
+           margin-left: 16px;
+       }
+       #lorem {}
+         
+       
+       #lorem img {
+           float: left;
+           display: inline-block;
+           margin-right:30px;
+       }
+       
+       .button-wrap {
+            clear: both;
+        }
+        .modally .modally-close-button {
+            position: absolute;
+            top: 54px;
+            right: 21px; 
+        } 
+         
+         
+         
+   </style>
+    <link rel="stylesheet" href="../css/jquery.modally2.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/inobounce/0.2.0/inobounce.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.modally.js"></script>
+</head>
+
+<body> 
+   
+   <header>
+        <div class="home"><a href="index-ko.html"><img src="../img/pG2_03.png" alt="홈버튼"></a></div>
+        <div class="total"><a href="total-ko.html"><img src="../img/pG2_06.png" alt="앞페이지"></a></div>
+    </header>
+   
+   
+    <div id="carousel">
+        <div id="slides">
+            <ul>
+                <li class="slide">
+                    <div class="quoteContainer">
+                        <div class="nums"><img src="../img/p201.png" alt="no.1"></div>
+                        <div class="mywork">
+                            <p class="title">EXPLORE<br>MY<br>ARTWORK</p>
+                            <p class="txt"><span>01 핑크 하마</span><br>- 이 작품은 핑크색 발레리나 복을 입은 귀여운 하마를 입체적으로 표현하였습니다.</p>
+                            <button><a href="#lorem" target="_modal" class="button white">MORE</a></button>
+                        </div>
+                        <div class="frame">
+                            <div class="mockup">
+                            <img src="../img/pG2-102_11.jpg" alt="핑크 하마 목업">
+                            </div>
+                        </div>
+                        <div class="tool_period">
+                            <div class="period"><span>작업 시간</span><br>- 20시간</div>
+                            <div class="tool"><span>도구</span><br>- 일러스트레이터</div>
+                        </div>
+                    </div>
+                    
+                </li>
+                <li class="slide">
+                    <div class="quoteContainer">
+                        <div class="nums"><img src="../img/p201.png" alt="no.1"></div>
+                        <div class="mywork">
+                            <p class="title">EXPERIENCE<br>MY<br>ARTWORK</p>
+                            <p class="txt"><span>02 부다페스트 호텔</span><br>- 이 작품은 영화 "그랜드 부다페스트 호텔"에서 영감을 받은 작품입니다.</p>
+                            <button><a href="#lorem2" target="_modal" class="button white">MORE</a></button>
+                        </div>
+                        <div class="frame">
+                            <div class="mockup"><img src="../img/pG2-103_11.jpg" alt="부다페스트 호텔 목업"></div>
+                        </div>
+                        <div class="tool_period">
+                            <div class="period"><span>작업 시간</span><br>- 25시간</div>
+                            <div class="tool"><span>도구</span><br>- 일러스트레이터</div>
+                        </div>
+                    </div>
+                    
+                </li>
+                <li class="slide">
+                    <div class="quoteContainer">
+                        <div class="nums"><img src="../img/p201.png" alt="no.1"></div>
+                        <div class="mywork">
+                            <p class="title">EXPERIENCE<br>MY<br>ARTWORK</p>
+                            <p class="txt"><span>03 플라워 걸</span><br>- 이 작품은 다채로운 색상의 꽃들에 둘러싸여진 쇼녀를 표현한 작품입니다.</p>
+                            <button><a href="#lorem3" target="_modal" class="button white">MORE</a></button>
+                        </div>
+                        <div class="frame">
+                            <div class="mockup"><img src="../img/pG2-101_11.jpg" alt="mockup"></div>
+                        </div>
+                        <div class="tool_period">
+                            <div class="period"><span>작업 시간</span><br>- 18시간</div>
+                            <div class="tool"><span>도구</span><br>- 일러스트레이터</div>
+                        </div>
+                    </div>
+                    
+                </li>
+            </ul>
+        </div>
+        
+        
+<!--        lightbox-->
+        <div id="lorem" style="display:none" class="modally-init" modally-max-width="1280">
+            <img src="../img/artwork101.jpg" alt="핑크 하마 스타일가이드" width="100%">
+            <div class="button-wrap">
+                <a target="_modal:close" class="button small">닫아주세요!</a>
+            </div>
+        </div>
+        <div id="lorem2" style="display:none" class="modally-init" modally-max-width="1280">
+            <img src="../img/artwork102.jpg" alt="부다페스트 호텔 스타일가이드" width="100%">
+            <div class="button-wrap">
+                <a target="_modal:close" class="button small">닫아주세요!</a>
+            </div>
+        </div>
+        <div id="lorem3" style="display:none" class="modally-init" modally-max-width="1280">
+            <img src="../img/artwork103.jpg" alt="플라워걸 스타일가이드" width="100%">
+            <div class="button-wrap">
+                <a target="_modal:close" class="button small">닫아주세요!</a>
+            </div>
+        </div>
+        
+        
+        
+        <div class="btn-bar">
+            <div id="buttons">
+                <a id="prev" href="#">&lt;</a> 
+                <a id="next" href="#">&gt;</a> 
+            </div>
+        </div>
+        
+        
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //rotation speed and timer
+            var speed = 10000;//5000
+
+            var run = setInterval(rotate, speed);
+            var slides = $('.slide');
+            var container = $('#slides ul');
+            var elm = container.find(':first-child').prop("tagName");
+            var item_width = container.width();
+            var previous = 'prev'; //id of previous button
+            var next = 'next'; //id of next button
+            slides.width(item_width); //set the slides to the correct pixel width
+            container.parent().width(item_width);
+            container.width(slides.length * item_width); //set the slides container to the correct total width
+            container.find(elm + ':first').before(container.find(elm + ':last'));
+            resetSlides();
+
+
+            //if user clicked on prev button
+
+            $('#buttons a').click(function(e) {
+                //slide the item
+
+                if (container.is(':animated')) {
+                    return false;
+                }
+                if (e.target.id == previous) {
+                    container.stop().animate({
+                        'left': 0
+                    }, 1500, function() {
+                        container.find(elm + ':first').before(container.find(elm + ':last'));
+                        resetSlides();
+                    });
+                }
+
+                if (e.target.id == next) {
+                    container.stop().animate({
+                        'left': item_width * -2
+                    }, 1500, function() {
+                        container.find(elm + ':last').after(container.find(elm + ':first'));
+                        resetSlides();
+                    });
+                }
+
+                //cancel the link behavior            
+                return false;
+
+            });
+
+            //if mouse hover, pause the auto rotation, otherwise rotate it    
+            container.parent().mouseenter(function() {
+                clearInterval(run);
+            }).mouseleave(function() {
+                run = setInterval(rotate, speed);
+            });
+
+
+            function resetSlides() {
+                //and adjust the container so current is in the frame
+                container.css({
+                    'left': -1 * item_width
+                });
+            }
+
+        });
+        //a simple function to click next link
+        //a timer will call this function, and the rotation will begin
+
+        function rotate() {
+            $('#next').click();
+        }
+
+    </script>
+    
+<!--lightbox-->
+    <script type="text/javascript">
+            jQuery(document).ready(function() {
+                $('#ipsum').modally('ipsum', {'max-width': 800});
+                $('#ipsum2').modally('ipsum', {'max-width': 800});
+                $('#ipsum3').modally('ipsum', {'max-width': 800});
+                //$('#lorem').modally();
+                $('#dolor').modally();
+                modally('video-modal', {video: true, 'max-width': 800});
+            });
+    </script>  
+</body>
+
+</html>

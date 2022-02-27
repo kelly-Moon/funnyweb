@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Once NewYorker</title>
+    <link rel="shortcut icon" href="img/favi.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">    
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <style>
+        .ko a {display: block; color: #fff;position: absolute;top: 20px;right: 41px;width: 30px; border-left: 1px solid #fff;padding-left: 10px;line-height: 12Px;}
+        .eng a {display: block; color: #efadbb;position: absolute;top: 20px;right: 91px;width: 30px;line-height: 12Px;font-weight: bold;}
+    </style>
+   <link rel="stylesheet" href="css/jquery.modally.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/inobounce/0.2.0/inobounce.min.js"></script>
+    <script type="text/javascript" src="js/jquery.modally.js"></script>
+</head>
+
+<body>
+   <main>
+       
+   
+    <header>
+        <div class="home"><a href="index.html"><img src="img/home_btn.png" alt="home button"></a></div>
+        <div class="guide"><a href="#"><img src="img/guide_book.png" alt="guidebook"></a></div>
+        <div class="ko"><a href="html/index-ko.html">KO</a></div>
+        <div class="eng"><a href="index.html">ENG</a></div>
+    </header>
+    
+    <div id="slideImg" class="cont">
+        <div class="slideMain hero">
+            <ul class="slide1 table">
+                <li class="content cell">
+                   <a href="#lorem" target="_modal" class="button white">
+                        <div class="number"><img src="img/index_01.png" alt="01"></div>
+                        <div class="title">About<br>New<br>York</div>
+                        <div class="detail">NEWYORK IS THE GREATEST CITY IN THE WORLD.</div>
+                   </a>
+                   
+                </li>
+                <li class="content">
+                   <a href="html/total.html">
+                        <div class="number"><img src="img/index_02.png" alt="02"></div>
+                        <div class="title">About<br>My<br>Work <span>1</span></div>
+                        <div class="detail">Made with <span>Illustrator</span> and <span>Photoshop</span>.</div>
+                   </a>    
+                </li>
+                <li class="content">
+                   <a href="html/total2.html">
+                       <div class="number"><img src="img/index_03.png" alt="03"></div>
+                        <div class="title">About<br>My<br>Work <span>2</span></div>
+                        <div class="detail">Made with <span>Illustrator</span>, <span>Photoshop</span>, <span>HTML5</span>, <span>CSS3</span> and <span>JQuery</span>.</div>
+                   </a>
+                </li>
+                <li class="content">
+                    <a href="html/profile3.html">
+                        <div class="number"><img src="img/index_04.png" alt="04"></div>
+                        <div class="title">About<br>My<br>Self</div>
+                        <div class="detail">Let me introduce myself.</div>
+                    </a>   
+                </li> 
+            </ul>
+            
+        </div>
+    </div>
+    
+    <div id="lorem" style="display:none" class="modally-init" modally-max-width="1280">
+        <h1 class="modal-title">New York City</h1>
+        <img src="img/bmp7ik4fcvf21.jpg" alt="뉴욕 에어뷰" width="50%">
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;New York City is the most populous city in the USA. With an estimated population of 8,398,748 distributed over a land area of about over 305 square miles in 2018, New York is also the most densely populated major city in the USA. This global power city has been described as the cultural, financial, and media capital of the world, and exerts a significant impact upon entertainment, commerce, research, technology, education, politics, tourism, art, fashion, and sports. Home to the headquarters of the UN, New York is an important center for international diplomacy. <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;New York City consists of five boroughs – Brooklyn, Queens, Manhattan, The Bronx, and Staten Island – which were consolidated into a single city in 1898. As many as 800 languages are spoken in New York, making it the most linguistically diverse city in the world. New York City is home to more than 3.2 million residents born outside the United States, the largest foreign-born population of any city in the world.<br> &nbsp;&nbsp;&nbsp;&nbsp;New York City traces its origins to a trading post founded by colonists from the Dutch Republic in 1624; the post was named New Amsterdam in 1626. The city came under English control in 1664 and were renamed New York after King Charles II of England granted the lands to his brother, the Duke of York. New York was the capital of the United States from 1785 until 1790, and has been the largest US city since 1790. Immigrants came to the U.S. by ship in the late 19th and early 20th centuries.<br> &nbsp;&nbsp;&nbsp;&nbsp;Many landmarks in New York City are well known internationally. Providing continuous 24/7 service, the New York City Subway is the largest single-operator rapid transit system worldwide. The city has over 120 colleges and universities ranked among the top universities in the world. The city has been called both the most economically powerful city and world's leading financial center, and is home to the world's two largest stock exchanges by total market capitalization, the New York Stock Exchange and NASDAQ.
+          
+          
+          </p>
+        <div class="button-wrap">
+            <a target="_modal:close" class="button small">Close me!</a>
+        </div>
+    </div>
+    </main>
+
+<!--    rotating text sliding effect                -->
+    <script src="js/jquery.rotate.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#slideImg").rotate();
+        });
+
+    </script>
+<!--lightbox-->
+    <script type="text/javascript">
+            jQuery(document).ready(function() {
+                $('#ipsum').modally('ipsum', {'max-width': 800});
+                //$('#lorem').modally();
+                $('#dolor').modally();
+                modally('video-modal', {video: true, 'max-width': 800});
+            });
+    </script>  
+</body>
+</html>

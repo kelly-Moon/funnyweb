@@ -1,0 +1,114 @@
+#wrap {
+	width: 1600px;
+	margin: 0 auto;
+}
+header {
+	width: 100%; height: 260px;
+	overflow: hidden;
+	position: relative;
+}
+section {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 250px;
+}
+footer {
+	width: 100%; height: 80px;
+	background-color: #0056e1;
+}
+
+/******header******/
+.close_icon {
+	width: 80px; height: 80px;
+	background-image: url(../images/seemore_graphic_01.jpg);
+	background-repeat: no-repeat;
+	position: fixed; top: 0; right: 0;
+}
+.home_icon {
+	width: 80px; height: 80px;
+	background-image: url(../images/seemore_graphic_02.jpg);
+	background-repeat: no-repeat;
+	position: fixed; top: 0; left: 0;
+}
+.top_icon {
+	width: 80px; height: 80px;
+	background-image: url(../images/top_icon.jpg);
+	background-repeat: no-repeat;
+	position: fixed; bottom: 0; right: 0;
+}
+.linebox {
+	width: 240px; height: 89px;
+	background-image: url(../images/graphics.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 149px; left: 80px;
+}
+.category ul {
+	position: absolute; top: 60px; left: 650px;
+}
+.category ul li {
+	float: left;
+}
+.category ul li a {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 1.5em;
+	margin: 0 15px;
+	letter-spacing: 0.3px;
+}
+.category ul li.on a {
+	text-decoration: underline;
+}
+
+/******section******/
+.title {
+	width: 100%;
+}
+p.title01 {
+	text-align: center;
+	font-size: 1.8em;
+	padding-bottom: 10px;
+	font-weight: 700;
+}
+p.title02 {
+	text-align: center;
+	text-decoration: underline;
+	font-size: 1.3em;
+	font-family: 'Nanum Gothic', sans-serif;
+	padding-bottom: 30px;
+	font-weight: 700;
+}
+p.title03 {
+	text-align: center;
+	font-size: 1.2em;
+	font-family: 'Nanum Gothic', sans-serif;
+	line-height: 27px;
+	margin-bottom: 75px;
+}
+
+.img_box {
+	width: 100%;
+}
+img.van01 {
+	margin-left: 400px;
+	margin-bottom: 175px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+}
+img.van02 {
+	margin-left: 450px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+p.vg {
+	text-indent: -10000px;
+}
+
+/******footer******/
+address {
+	color: #fff;
+	font-size: 1.2em;
+	text-align: center;
+	padding-top: 35px;
+}
+
+
+

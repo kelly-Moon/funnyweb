@@ -1,0 +1,236 @@
+body {cursor: pointer;}
+header {
+    width:100%; height: 150px;
+    background-color:#fff;
+}
+.container {
+    width: 1420px; 
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+/*header*/
+#header_bg {
+    width: 100%;
+    height: 130px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+#logo {
+    float: left;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+}
+ul.lnb { 
+    position: absolute;
+    top: 30px;right: 0;}
+ul.lnb li {
+    float: left;
+    margin-right: 20px;
+}
+ul.lnb li:last-child{margin: 0;}
+ul.lnb li a {
+    color: #393939;
+    font-size: 15px;
+    font-weight: 400;
+}
+ul.lnb li a:hover {color: darkgrey;}
+ul.lnb li.search_box {
+    padding-top: 0;
+    display: none;
+}
+ul.lnb li input {
+	width: 120px; height: 25px;
+	border: 0;
+    border-bottom: 1px solid #393939;
+}
+
+ul.gnb {
+    position: absolute;
+    top: 100px;right: 0;}
+ul.gnb li {
+    float: left; 
+    padding-right: 30px;}
+ul.gnb li:last-child {padding: 0;}
+ul.gnb li a {
+    color: #393939;
+    font-size: 18px;
+    font-weight: 500;
+}
+ul.gnb li a:hover {
+    color: darkgrey;
+}
+
+/*title_banner*/
+#title_banner {
+    padding: 50px;
+    padding-bottom: 100px;
+}
+
+/*contents*/
+.contents {width: 100%; height: 300px;}
+.contents p {
+    text-align: center;
+    font-family: 'KoPub Dotum';
+    font-weight: 200;
+    letter-spacing: 0.5px;
+	opacity: 0;
+}
+.contents p:first-child {
+    font-family: 'Eulyoo1945-Regular';
+    font-weight: 500;
+}
+.contents p:nth-of-type(1) {margin-bottom: 20px; opacity: 1;} 
+.contents p:nth-of-type(5) {margin-bottom: 20px;} 
+
+.contents p:nth-of-type(2) { 
+	animation-name: txt02;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+@keyframes txt02 {
+	0% { opacity: 0}
+	100% { opacity: 1}
+}
+.contents p:nth-of-type(3) { 
+	animation-name: txt03;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes txt03 {
+	0% { opacity: 0}
+	100% { opacity: 1}
+}
+.contents p:nth-of-type(4) { 
+	animation-name: txt04;
+	animation-duration: 2s;
+	animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes txt04 {
+	0% { opacity: 0}
+	100% { opacity: 1}
+}
+.contents p:nth-of-type(5) { 
+	animation-name: txt05;
+	animation-duration: 2s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+@keyframes txt05 {
+	0% { opacity: 0}
+	100% { opacity: 1}
+}
+.contents p:nth-of-type(6) { 
+	animation-name: txt06;
+	animation-duration: 2s;
+	animation-delay:2.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes txt06 {
+	0% { opacity: 0}
+	100% { opacity: 1}
+}
+.contents p:nth-of-type(7) { 
+	animation-name: txt07;
+	animation-duration: 2s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+@keyframes txt07 {
+	0% { opacity: 0}
+	100% { opacity: 1}
+}
+.contents p:nth-of-type(8) { 
+	animation-name: txt07;
+	animation-duration: 2s;
+	animation-delay: 3.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes txt07 {
+	0% { opacity: 0}
+	100% { opacity: 1}
+}
+
+/*
+#contents02 {}
+#contents02 p {
+    text-align: center;
+    font-family: 'KoPub Dotum';
+    font-weight: 200;
+    letter-spacing: 0.5px;   
+}
+
+#contents02 p:first-child {
+    font-family: 'Eulyoo1945-Regular';
+    font-weight: 500;
+}
+*/
+#contents03 {width: 100%; margin-left: 150px;
+}
+
+/*footer*/
+footer {}
+footer #footer_bg {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #999;
+    margin: 0 auto;
+}
+footer ul.menu {
+    float: left;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+footer ul.menu li {float: left;} 
+footer ul.menu li a {
+    display: block;
+    font-size: 15px;
+    color: #393939;
+    border-right: 1px solid #393939;
+    padding: 0 10px;
+    line-height: 15px;
+    font-weight: 700;
+} 
+footer ul.menu li:last-child a {border: 0;}
+footer ul.menu li a:hover {color: darkgray;}
+
+
+footer ul.menu02 {
+    float: left;
+    margin-left: 170px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 150px;
+}
+footer ul.menu02 li {float: left;} 
+footer ul.menu02 li a {
+    display: block;
+    font-size: 15px;
+    color: #393939;
+    line-height: 15px;
+    border-right: 1px solid #393939;
+    padding: 0 10px;
+}
+footer ul.menu02 li:last-child a {border: 0;}
+footer ul.menu02 li a:hover {color: darkgray;}
+
+footer ul.copyright{
+    float: right;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+footer ul.copyright li {
+    float: left;
+    font-size: 15px;
+    color: #393939;
+    line-height: 15px;
+}
+footer ul.copyright li:hover {color: darkgray;}

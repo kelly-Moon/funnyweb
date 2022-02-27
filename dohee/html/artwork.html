@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIM DO HEE</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="../css/artwork.css">
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/font-kopub@1.0/kopubdotum.min.css'>
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="artwork_bg">
+        <div class="nav">
+            <ul class="gnb">
+                <li><a href="../index.html">HOME</a></li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li class="underbar">
+                    <a href="work.html">WORK</a>
+                    <ul class="dropdown">
+                        <li><a href="artwork.html">GRAPHIC</a></li>
+                        <li><a href="web_mail.html">WEB</a></li>
+                        <li><a href="kiehl.html">WEB SITE</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="contents">
+            <div class="main_title">
+                <h1>GRAPHIC DESIGN</h1>
+            </div>
+            <div class="main_txt">
+                
+                <h2>Artwork Design</h2>
+                <p>아트웍 디자인</p>
+            </div>
+            <div class="main_img">
+                <img src="../img/artwork_01.jpg" alt="">
+                
+            </div>
+            <div class="sub_txt">
+                <h3>Analysis</h3>
+                <p>‘기하학적인 패턴과 각기 다른 개성을 표현하는 색감들. <br>
+                    하늘은 까만 밤하늘과 그 위를 수 놓은 별들과 같다.<br>
+                    전시회에서 작품을 감상 중인 남자.<br>
+                    그가 손을 뻗어 별의 형상에 다가간다.’<br>
+                    목표와 꿈을 쫓는 자를 표현하고자 했습니다.
+                </p>
+            </div>
+            <div class="line"></div>
+            <div class="txt_line"></div>
+            <div class="center_line"></div>
+            <div class="center_circle"></div>
+            <div class="line_02"></div>
+            
+            <div class="detail_txt">
+                <h2>Artwork Detailed</h2>
+            </div>
+            <div class="detail_img">
+                <img src="../img/artwork_03.jpg" alt="">
+            </div>
+           
+        </div>
+        <!--contents-->
+        
+        <div class="arrow_icon">
+            <div class="arrow_01">
+                <a href="hug.html"><span class="material-icons md-48 color">&#xe5e0;</span></a>
+            </div>
+            <div class="arrow_02">
+                <a href="banner.html"><span class="material-icons md-48 color">&#xe5e1;</span></a>
+            </div>
+        </div>
+        
+         <div id="footer">
+            <p>© 2021 KIM DO HEE Portfolio |  All rights reserved.</p>
+        </div>
+        <!--footer-->
+        
+        <div id="top_icon">
+            <a href="#artwork_bg" class="top_btn">
+            <img src="../img/arrow.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!--artwork_bg-->
+
+<script type="text/javascript">
+ $(document).ready(function() {
+    $("a.top_btn").anchorAnimate()
+ });
+ jQuery.fn.anchorAnimate = function(settings) {
+    settings = jQuery.extend({
+    speed : 500
+    }, settings);    
+    return this.each(function(){
+    var caller = this
+    $(caller).click(function (event) {    
+    event.preventDefault()
+    var locationHref = window.location.href
+    var elementClick = $(caller).attr("href")
+    var destination = $(elementClick).offset().top;
+    $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() 
+    {
+    window.location.hash = elementClick
+    });
+     return false;
+    })
+    })
+ }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#container .contents_box {width: 960px;height: 3940px;}
+.work04_contents {
+	width: 810px;height: 3940px;
+	background-image: url(https://tistory1.daumcdn.net/tistory/1669583/skin/images/work_04_webmail.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-bottom: 100px;
+	margin: 0 auto;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.4);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

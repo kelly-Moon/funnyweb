@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>banner</title>
+	<link rel="stylesheet" href="../css/banner.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<!--menu-->
+	<link rel="stylesheet" type="text/css" href="../css/menu_style2.css">
+	<!--무브탑버튼-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+	<!--메뉴-->
+	<div class="button_container" id="toggle">
+		<span class="top"></span>
+	  	<span class="middle"></span>
+	  	<span class="bottom"></span>
+	</div>
+	<div class="overlay" id="overlay">
+		<nav class="overlay-menu">
+	   		<ul>
+	   			<li><a href="index.html">Home</a></li>
+	   			<li><a href="html/about.html">About</a></li>
+	   			<li><a href="html/design.html">Design</a></li>
+	   			<li><a href="html/publishing.html">Publishing</a></li>
+	   			<li><a href="html/contact.html">Contact</a></li>
+	   		</ul>
+		</nav>
+	</div>
+	<!--//메뉴-->
+
+	<div id="container">
+		<div id="sub_img">
+		</div>
+		<!--//빛이미지-->
+		<div class="nav">
+			<ul>
+				<li><a href="#">Illustation</a></li>
+				<li><a href="banner.html">Banner</a></li>
+				<li><a href="event.html">Event</a></li>
+				<li><a href="webmail.html">Web-mail</a></li>
+				<li><a href="promotion.html">Promotion</a></li>
+				<li><a href="onandon.html">On&amp;On</a></li>
+				<li><a href="skinrx.html">SkinRX</a></li>
+				<li><a href="redesign.html">Redesign</a></li>
+				<li><a href="project.html">Project</a></li>
+			</ul>
+		</div>
+		<div class="section1">
+			<div class="content1"></div>
+			<div class="content2"></div>
+			<div class="content3"></div>
+			<div class="content4"></div>
+			<div class="content5"></div>
+		</div>
+		<div class="section2">
+			<div class="text1">
+				<h2>오설록 티하우스 3종</h2>
+				<p>오설록 소개 : 오설록은 아모레퍼시픽의 차 브랜드로 고 서성환 회장의 지시로</p>
+			</div>
+			<div class="text2">
+				<p>Concept</p>
+			</div>
+			<div class="text3">
+				<p>
+					로 황무지에 녹차밭 가꾸기 사업을 시작하여 확장해 나갑니다. '오설록'은 눈 속에서도 피어나는 녹차의 생명력에 대한 감탄의 표현과 설록차의 고향이란 뜻을 담고 있습니다.    
+				</p>
+			</div>
+			<div class="text4">
+				<p>
+					작품 컨셉 : 메뉴(TEA)의 주재료가 되는 꽃을 배경으로 하여 달콤하고 신선한 향이 느껴질 수 있도록 제작하였습니다. 자연과 정성을 담은 오설록만의 자연주의 브랜드 이미지를 강조하였습니다.
+				</p>
+			</div>
+		</div>
+		<!--topbutton-->
+		<a id="move_top" href="#">
+			<img src="../img/top.png" alt="move top button">
+		</a>
+		<!--//topbutton-->
+	</div>
+	<div id="footer">
+		<p>&copy;2018 jangmi</p>
+	</div>
+</div>
+
+<!--메뉴-->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+		  
+		  <script>
+		    $('#toggle').click(function() {
+		        $(this).toggleClass('active');
+		        $('#overlay').toggleClass('open');
+		      });
+		  </script>	
+
+<!--무브탑버튼-->
+		  	<script>
+	    $(function() {
+	        $(window).scroll(function() {
+	            if ($(this).scrollTop() > 300) {
+	                $('#move_top').fadeIn();
+	            } else {
+	                $('#move_top').fadeOut();
+	            }
+	        });
+	        
+	        $("#move_top").click(function() {
+	            $('html, body').animate({
+	                scrollTop : 0
+	            }, 400);
+	            return false;
+	        });
+	    });
+	</script>			
+</body>
+</html>

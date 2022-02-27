@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MISUK's Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+  <link rel="shortcut icon" href="../img/POT.ico">
+
+	<!--메뉴-->
+  	<link rel="stylesheet" type="text/css" href="../css/menu_style.css">
+
+</head>
+<body>
+
+<!--메뉴-->
+<div class="button_container" id="toggle">
+  <span class="top"></span>
+  <span class="middle"></span>
+  <span class="bottom"></span>
+</div>
+
+<div class="overlay" id="overlay">
+  <nav class="overlay-menu">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../html/about.html">About Me</a></li>
+      <li><a href="../html/work.html">Work</a></li>
+      <li><a href="../html/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+<section id="page1">
+	<div class="container"></div>
+</section>
+
+
+<!--메뉴-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+  
+  <script>
+    $('#toggle').click(function() {
+        $(this).toggleClass('active');
+        $('#overlay').toggleClass('open');
+      });
+  </script>
+
+</body>
+</html>

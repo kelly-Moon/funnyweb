@@ -1,0 +1,262 @@
+/****reset****/
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+img,input,button {border: 0;}
+/* 띄어쓰기 X */
+body{font-family: 'NanumBarunGothic', sans-serif;}
+
+/****layout****/
+/*ir*/
+.ir { width: 0; height: 0; font-size: 0; line-height: 0; overflow: hidden; position: absolute; left: 0; top: 0; }
+
+
+header {
+    width:100%; height: 97px;
+    /*100%를 하는 이유는 해상도가 꽉차서 수치는 안 정해도돼*/
+    background-color:#fff;
+    border-bottom: 1px solid #494949;   
+}
+#contents {
+    width: 100%; height: 687px;
+    background-color: lightblue;
+    background-image: url(../img/pattern.jpg);
+}
+
+.container {
+    width: 1357px;
+    margin: 0 auto;
+}
+
+/****header****/
+#logo {
+    width: 196px;height: 31px;
+    background-color: red;
+    float: left;
+    margin-top: 30px;
+}
+nav{
+    float: left;
+    margin-left: 155px;
+    margin-top: 35px;}
+nav ul {}
+/*넣을 게 없어도 {}는 써야함*/
+nav ul li {float: left;}
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    /*폰트 링크시키면 두께 정할 수 있음*/
+}
+nav ul li a:hover {color: skyblue;}
+.totalmenu {
+    display: block;
+    float: left;
+    margin-left: 45px;
+    margin-top: 45px;
+    font-size: 14px;
+
+    /* 
+    background-image: url(../img/bar.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 2px; 
+    */
+    
+    /* 축약형, 띄어쓰기해서 다 넣기 */
+    background: url(../img/bar.jpg) no-repeat 0 2px;
+    padding-left: 16px;}
+.totalmenu:hover {
+    color: skyblue;
+    cursor: pointer;}
+
+
+/****float 방법****/
+/*.search_box {
+    float: right;
+    width: 250px;height: 50px;
+    background-color: lightsteelblue;}
+
+.search_box input {
+    width: 180px;height: 42px;
+    display: block; 
+    float: left; 
+    border: 1px solid #000; 
+    box-sizing: border-box;}
+
+.search_box button {
+    width: 42px;height: 42px;
+    display: block; 
+    float: left;
+    border: 1px solid #000; 
+    box-sizing: border-box;}*/
+
+/****position 방법****/
+.search_box {
+    float: right;
+    width: 180px;height: 40px;
+    background-color: lightsteelblue;
+    position: relative;
+    margin-top: 27px;
+}
+.search_box input {
+    width: 180px;height: 42px;
+    position: absolute;
+    top: 0;left: 0;
+    border: 1px solid #494949;
+    box-sizing: border-box;
+}
+.search_box button {
+    width: 42px;height: 42px; 
+    position: absolute;
+    top: 0;right: 0;
+    background-image: url(../img/icon.jpg);
+    cursor: pointer;
+    text-indent: -10000px;
+    /* ir기법: 
+    글자가 존재하지만(문서에는 보이지만) 출력되지 않는 방법.
+    웹접근성에서 필요함 */
+}
+
+/****contents****/
+#left_section {
+    width: 315px;height: 687px;
+    background-color: palevioletred;
+    float: left;
+}
+#center_section {
+    width: 727px;height: 687px;
+    background-color:  cadetblue;
+    float: left;
+}
+#right_section {
+     width: 315px;height: 687px;
+    background-color: palevioletred;
+    float: left;}
+
+/****left section****/
+.left01 {
+    width: 315px;height: 314px;
+    background-color: #cf3e4a;
+    position: relative;
+}
+.left02 {
+    width: 315px;height: 314px;
+    background-color: #e0ded3;
+    position: relative;
+}
+.left03 {
+    width: 158px;height: 59px;
+    background-color: #b2aea1;
+    float: left;
+   
+    
+}
+.left04 {
+    width: 157px;height: 59px;
+    background-color: #d0ccc0;
+    float: left;
+}
+/****right section****/
+.right01 {
+    width: 315px;height: 314px;
+    background-color: #414a68;
+    position: relative;
+}
+.right02 {
+    width: 315px;height: 314px;
+    background-color: #665659;
+    position: relative;
+}
+.right03 {
+    width: 158px;height: 59px;
+    background-color: #58464a;
+    float: left;
+    
+    
+}
+.right04 {
+    width: 157px;height: 59px;
+    background-color: #423135;
+    float: left;
+}
+
+/****detail****/
+/* 같은 클래스라서 효과가 동일하게 적용됨 */
+.txt {
+    padding: 48px 0 0 38px;
+    /* 시계 방향순으로 돌아간다 상>우>하>좌 */
+    font-size: 19px;
+    color: #fff;
+    
+}
+.title {
+    padding: 0 0 0 38px;
+    margin-top: 8px;
+    font-size: 30px;
+    font-weight: bold;
+    color:#fff;
+}
+.box_txt {
+    width: 160px;
+    height: 32px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    margin-left: 38px;
+    margin-top: 7px;
+}
+.box_txt:hover {
+    background-color: #fff;
+    color:#cf3e4a;
+    cursor: pointer;
+}
+.box_img {
+    position: absolute;
+    bottom: 20px;right: 36px;
+}
+.txt02 {
+    font-size: 20px;
+    padding-top: 48px;
+    padding-left: 38px;
+}
+.small_txt02 {
+    padding-left: 38px;
+    margin-top: 8px;
+    font-size: 15px;
+}
+.img01{
+    position: absolute;
+    bottom: 123px; left: 38px;
+}
+.img02{
+    position: absolute;
+    top: 30px; right: 33px;
+}
+.img03{
+   position: absolute; 
+   bottom: 30px; right: 33px;
+}
+
+/* two class : 다른 속성값을 주고 싶을 때 
+               명사 2개를 띄어쓰기해서 쓴다 
+               "class명 class명" */
+.brown {color: #423135;}
+.brown:hover {color: #fff; cursor: pointer;}
+
+.white {color: #fff;}
+.white:hover {color:burlywood; cursor: pointer;}
+
+.left03,.left04,.right03,.right04 {
+    text-align: center; line-height: 59px;
+    font-size: 15px;font-weight: bold;
+}
+
+
+
+
+
+

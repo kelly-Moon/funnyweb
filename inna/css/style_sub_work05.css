@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+#container .contents_box {width: 1280px;height: 4360px;}
+.work05_contents {
+	width: 1280px;height: 4348px;
+	background-image: url(https://tistory3.daumcdn.net/tistory/1669583/skin/images/work_05_promotion_site.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-bottom: 100px;
+	margin: 0 auto;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.4);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

@@ -1,0 +1,452 @@
+/************outline************/
+#gnb {
+    width: 100%; height: 32px;
+    background-color: #000;
+}
+#header {
+    width: 100%; height: 109px;
+    background-color: white;
+}
+#nav {
+    width: 100%; height: 56px;
+    background-color: white;
+}
+#main {
+    width: 100%;
+    background-color:white;}
+#footer {
+    width: 100%; height: 200px;
+    background-color: white;
+    margin-top: 50px;
+}
+
+/*********container**********/
+.container {
+    width: 944px; 
+    margin: 0 auto;   
+    position: relative;
+    cursor: pointer;
+}
+
+/***********layout*************/
+/*gnb*/
+#gnb h6 {
+    float: left;
+    margin-top: 5px;}
+#gnb h6 a {color: #fff;}
+#gnb h6 a:hover {color: indianred;}
+#gnb h6 span {
+    display: inline-block; 
+    /*block, inline 속성 둘다 있음*/
+    width: 15px; height: 15px;
+    background-color: #000;
+    background-image: url(../img/icons.png);
+    background-position: -350px 0; 
+    position: relative;
+    top: 7px; left: 2px;
+    
+}
+#gnb ul {
+    float: right;
+    margin-top: 6px;}
+#gnb ul li {
+    float: left; }
+#gnb ul li a {
+    font-size: 10px; 
+    color: #fff; 
+    padding: 9px; 
+}
+#gnb ul li a:hover {color: indianred;}
+#gnb ul li span { 
+    display: inline-block; 
+    width: 15px; height: 10px;
+    background-color:  #000;
+    background-image: url(../img/icons.png);
+    background-position: 0px 0; 
+    position: relative;
+    top: 2px; left: -6px;}
+
+#gnb ul li:nth-child(3) span {background-position: -299px 0;}
+#gnb ul li:nth-child(4) span {background-position: -200px 0;}
+#gnb ul li:nth-child(6) span {background-position: -250px 0;}
+
+
+/*이미지를 표현하는 방법
+1. html태그를 통해 표현하는 방법 
+   ex) <img src="" alt=""> => 의미가 있는 이미지
+2. css속성을 통해 표현하는 방법 
+   ex) {background-color: } => 의미가 없는 이미지
+3. 이미지 스프라이트 방법
+   => 아이콘 종류에 많이 쓰인다. 
+*/
+
+
+/***********header***********/
+.menu {
+    position: absolute;
+    top: 52px;left: 0;
+}
+.menu ul {}
+.menu ul li {float: left;}
+.menu ul li a {
+    display: block;
+    padding: 0 11px;
+    border-right: 1px solid gray;
+    font-size: 13px;
+    line-height: 10px;
+}
+.menu ul li:first-child a {padding-left: 0;}
+.menu ul li:last-child a {border: 0;}
+.menu ul li a:hover {color: indianred;}
+
+.logo  {
+    position: absolute;
+    top: 35px;left: 50%;
+    transform: translatex(-50%);
+    /*내 몸의 반만 이동할 때 쓰는 방법*/
+    font-size: 3em;
+    /*em은 배수*/
+    font-family: 'Merriweather', serif;
+    letter-spacing: 3px;
+}
+.logo span {color: gray;} 
+
+.search_box {
+    position: absolute;
+    top: 35px; right: 0;
+    width: 202px; height: 34px;
+    background-color: yellow;
+}
+.search_box input {
+    width: 164px; height: 34px;
+    border: 1px solid gray;
+    position: absolute;
+    top: 0; left: 0;
+}
+.search_box button {
+    width: 36px; height: 36px;
+    background-color: gray;
+    position: absolute;
+    top: 0; right: 0;
+    background-image: url(../img/icon_search.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+    /*background-size 가로 세로에 맞춰서 비율이 맞춰짐
+    36px이니까 100%면 36사이즈*/
+    text-indent: -1000000px;
+}
+
+/***********nav***********/
+
+#nav {}
+#nav ul {
+    border-top: 5px solid #000;
+    padding-top: 15px;
+}
+#nav ul li {float: left;}
+#nav ul li a {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0 18px;
+}
+#nav ul li a:hover{color: yellowgreen;}
+
+
+/*************main************/
+/**********main_banner********/
+.main_banner {
+    width: 944px; height: 456px;
+    background-color: #fff;
+}
+.rolling_banner {
+    width: 624px; height: 456px;
+    background-color: skyblue;
+    float: left;
+}
+.feature_item {
+    width: 304px; height: 304px;
+    background-color: #fff;
+    float: right;
+    margin-bottom: 16px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+}
+.feature_item h3 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;/*대문자로 변환*/
+    line-height: 2.2em;
+}
+.feature_item .feature_img {
+    text-align: center;
+    /*이미지에서도 먹힘*/
+    margin-bottom: 15px;
+}
+
+.txt {width: 200px; margin: 0 auto;}
+.txt ul {text-align: center;}
+.txt ul li {
+    overflow: hidden;
+    white-space: nowrap;
+	text-overflow: ellipsis;
+    margin-bottom: 3px 
+    /*글자 생략 삼총사*/
+}
+
+.txt ul li:first-child {
+    font-weight: bold;
+    color: #333;
+}
+.txt ul li:nth-child(2) {
+    color: #727272;}
+
+/* money,cancel 띄어쓰기X, 자식이니까 */
+.txt ul li span.money   { 
+    font-weight: bold;
+    margin-right: 8px; 
+}
+.txt ul li span.cancel {
+    color: #9b9b9b; 
+    text-decoration: line-through;
+    /*글자 밑줄*/
+}
+.main_event {
+    width: 304px; height: 136px;
+    background-color: olivedrab;
+    float: right;
+    background-image: url(../img/main_event.png);
+}
+
+/************title************/
+.title {
+    height: 46px;
+    /*w값은 부모의 사이즈라 안적어도됨(쓴다면 w100%로)*/
+    background-color: white;
+    text-align: center;
+    border-top: 3px solid #000;
+}
+.title h2 {
+    font-size: 2em;
+    letter-spacing: 5px;
+    line-height: 46px;
+}
+
+/**********special_picks**********/
+.special_picks {
+    width: 100%; height: 410px;
+    background-color: paleturquoise;
+    margin-top: 50px;
+    /*공간을 벌려놔야 자식들을 넣을 수 있음*/
+}
+.pick_menu {
+    width: 100%; height: 45px;
+    background-color:white;
+    border-top: 2px dotted #000;
+}
+.pick_menu ul {
+    border-top: 2px dotted indianred;
+}
+.pick_menu ul li {
+    float: left;
+    padding: 0 15px;
+    position: relative;
+    /*글자 길이만큼 border가 들어감*/
+}
+.pick_menu ul li:first-child {margin-left: 250px;}
+.pick_menu ul li a {
+    display: block;
+    padding-top: 15px;
+    /*padding: 0 15px;*/
+}
+.pick_menu ul li a:hover{
+    border-top: 4px solid #000; 
+    position: relative;
+    top:-4px;
+    /* margin-top: -4px 해도됨 */
+}
+
+.pick_box {
+    width: 100%; height: 316px;
+    background-color: lightpink;
+}
+
+/*삼각형 만들기 - 가상요소*/
+.pick_menu ul li a span:before {
+	content: "";
+	border-top: 5px solid #000;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+    position: absolute;
+    top: 0;left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+    /*before, after : 문자가 앞에 붙고, 뒤에 붙음*/
+    /*연결 부분이 사선으로 연결됨*/
+    /*transparent를 쓰면 투명하게 된다*/
+
+.pick_menu ul li a:hover span:before  {opacity: 1;}
+/*a에 hover하면 span:before가 보임(opacity) */
+
+
+.pick_box{
+    width: 100%;height: 316px;
+    background-color: yellow;
+}
+.pick_box .pick{
+    width: 236px;height: 316px;
+    background-color: #fff;
+    float: left;
+}
+
+.pick_box .pick .pick_img {
+    text-align: center;
+    padding: 15px 0;
+}
+.pick_box .pick .pick_icon {
+    width: 28px; height: 16px;
+    background-color: beige;
+    background-image: url(../img/icons.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.pick_box .pick .icon2 {
+    width: 48px;
+    background-position: -50px 0;
+}
+.pick_box .pick .icon3 {
+    background-position: -150px 0;
+}
+/*부모를 윗 단계에서 썼으면 아래단계도 써줘야 효과가 적용*/
+
+/********magazine*******/
+.magazine {
+    width: 100%;height: 122px;
+    background-color: darkviolet;
+    margin-top: 50px;
+}
+/**********brand_focus********/
+.brand_focus {
+    width: 100%;height: 353px;
+    background-color: whitesmoke;
+    margin-top: 50px;
+}
+
+/*
+.brand_focus ul {}
+.brand_focus ul li{
+    float: left;
+    margin-right: 16px;
+}
+.brand_focus ul li:last-child {margin: 0;}
+*/
+
+/********best_contents********/
+.best_contents {
+    width: 100%; height: 337px;
+    margin-top: 50px;
+}
+.best_menu {
+    width: 176px; height: 288px;
+    float: left;
+}
+.best_menu li {
+    width: 176px; height: 72px;
+}
+.best_menu li a {
+    display: block;
+    width: 176px; height: 72px;
+    text-indent: -1000000px;
+}
+.best_menu li:nth-child(1) a {background-image: url(../img/best_menu01.jpg);}
+.best_menu li:nth-child(2) a {background-image: url(../img/best_menu02.jpg);}
+.best_menu li:nth-child(3) a {background-image: url(../img/best_menu03.jpg);}
+.best_menu li:nth-child(4) a {background-image: url(../img/best_menu04.jpg);}
+
+.best_menu li:nth-child(1) a:hover {
+    background-image: url(../img/best_menu01_r.jpg);
+}
+.best_menu li:nth-child(2) a:hover {
+    background-image: url(../img/best_menu02_r.jpg);
+}
+.best_menu li:nth-child(3) a:hover {
+    background-image: url(../img/best_menu03_r.jpg);
+}
+.best_menu li:nth-child(4) a:hover {
+    background-image: url(../img/best_menu04_r.jpg);
+}
+.best_iframe {
+    width: 768px; height: 288px;
+    float: right;
+    /*iframe 박스, 바디 iframe은 iframe과 연결되는 문서의 크기*/
+}
+/*********tab_box*********/
+.tab_box {
+    width: 100%; height: 285px;
+    background-color: white;
+    margin-top: 50px;}
+.product_box {
+    padding: 20px;}
+.product_box li {
+    float: left; 
+    margin-right: 20px;}
+.product_box li:last-child {margin: 0 ;}
+
+/********footer********/
+.footer_bg {
+    border-top: 3px solid #000;
+}
+.section {
+    width: 314px; height: 135px;
+    float: left;
+}
+.section ul { 
+    border-right: 1px dotted #727272;
+    margin-right: 15px;
+    background-color: #fff;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.section ul.outlet {
+    border-right: 0;
+    border-bottom: 1px dotted #727272;
+}
+.section ul li {
+    margin-bottom: 6px;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+.section .notice {
+    line-height: 17px;
+}
+.section ul li span {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.section ul li strong {
+    font-size: 3em;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+.section ul li:first-child:hover {color: yellowgreen;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

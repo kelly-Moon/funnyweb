@@ -1,0 +1,182 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*layout*/
+* {margin: 0 auto; padding: 0;}
+body {background-color: black}
+header {
+    width: 100%; 
+    position: relative;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*main_nav*/
+#main_nav {
+    font-family: 'Montserrat';
+    padding-top: 40px;
+    position: fixed;
+    right: 80px;top: 0;
+    z-index: 1000;
+}
+#main_nav li {
+    float: left;
+    margin-right: 20px;
+}
+#main_nav li:last-child {
+    margin-right: 0;
+}
+#main_nav li a {
+    width: 100%;
+    font-size: 23px;
+    display: inline-block;
+    position: relative;
+}
+.underline {
+    display: block;
+    height: 1px;
+    width: 0;
+    position: absolute;
+    bottom: 0; left: 0;
+    background-color: #fff;
+    transition: all 0.2s linear; 
+}
+#main_nav li a:hover span.underline {width: 100%;}
+#line2 {width: 100%;}
+
+/*sub_nav*/
+#sub_nav {
+	font-family: 'Montserrat';
+    padding-top: 80px;
+    position: fixed;
+    right: 80px;top: 0;
+    z-index: 500;
+}
+#sub_nav li {
+	float: left;
+	margin-right: 20px;
+}
+#sub_nav li:last-child {margin-right: 0;}
+#sub_nav li a {
+	width: 100%;
+	font-size: 15px;
+	opacity: 0.65;
+	transition: 0.25s;
+}
+#sub_nav li:nth-child(6) a {opacity: 1}
+#sub_nav li a:hover {
+	opacity: 1;
+}
+
+/*header*/
+.d_txtbox {
+    padding-top: 145px;
+    width: 100%;
+    margin: 0 auto;
+}
+.d_title {width: 32.013888888%; margin-bottom: 30px;}
+.d_title img {width: 100%; }
+.d_contents {width: 100%; margin-top: 0px;}
+.d_contents li:nth-child(1) {
+    font-size: 16px;
+}
+.d_contents li:nth-child(2) {
+    font-size: 16px;
+    color: #8a898b;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.d_contents li:nth-child(3) {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+/*section*/
+section {width: 100%;}
+.detail_pages {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto; 
+}
+.detail_pages ul {
+    width: 75%; height: 500px;
+    position: relative; top: 0px;
+    margin: 0 auto;
+}
+.detail_pages ul li:hover {
+    transform: translate(0,-20px);
+    transition: 0.25s;
+}
+.detail_line1 li {position: absolute; top: 0; }
+.detail_line1 li:nth-child(1) {
+    width: 41.75925925925%; 
+    left: 0;
+}
+.detail_line1 li:nth-child(2) {
+    width: 41.48148148%;
+    left: 30.2%;
+}
+.detail_line1 li:nth-child(3) {
+    width: 47.8703703703%;
+    left: 58.42592592%;
+}
+.detail_pages ul li img {
+    width: 100%; transform: skewY(-5deg);  
+    box-shadow: -5px 10px 8px #000;
+    position: relative;
+}
+.detail_line1 li span {
+    position: absolute;top: 0; left: 0;
+    width: 100%; height: 100%; transform: skewY(-5deg); 
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center; line-height:300px;
+    font-size: 20px; font-weight: 500;
+    border: 1px solid #000;
+    opacity: 0; transition: 0.25s;
+}
+.detail_pages ul li:hover span {opacity: 1}
+/*tablet*/
+@media screen and (min-width:788px) and (max-width:991px) {
+    #dot {display: none;}
+    .d_txtbox {padding-top: 70px;}
+    .d_title {margin-bottom: 30px;}
+    .d_contents li:nth-child(1) {font-size: 18px}
+    .d_contents li:nth-child(2) {font-size: 15px; }
+    .d_contents li:nth-child(3) {font-size: 20px; }  
+    
+    .detail_pages ul {height: 300px;}
+}
+
+/*mobile*/
+@media screen and (min-width:320px) and (max-width:787px) {
+    #dot {display: none;}
+    .d_txtbox {padding-top: 30px;}
+    .d_title {margin-bottom: 0;}
+    .d_contents li:nth-child(1) {font-size: 16px}
+    .d_contents li:nth-child(2) {font-size: 12px; margin-top: 20px;}
+    .d_contents li:nth-child(3) {font-size: 16px; margin: 20px 0 40px 0;}
+    
+    .detail_pages ul {height: 200px;}
+}
+
+
+/*nav_detail*/
+@media screen and (min-width:1157px) and (max-width:1279px) {
+    #main_nav li a {font-size: 18px;}
+}
+@media screen and (min-width:992px) and (max-width:1156px) {
+    #main_nav {right: 40px;}
+    #main_nav li a {font-size: 16px;}
+    #sub_nav {right: 40px;}
+    #sub_nav li a {font-size: 14px;}
+}
+@media screen and (min-width:320px) and (max-width:479px) {
+
+}
+@media screen and (min-width:320px) and (max-width:498px) {
+    .d_txtbox>a img {width: 60%;}
+}
+

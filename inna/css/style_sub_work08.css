@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contents_box {width: 1280px;}
+.work08_01_box {
+	width: 960px;height: 840px;
+	margin: 0 auto;	margin-bottom: 100px;
+}
+.work08_01_box .sub_title_box {
+	width: 460px;height: 150px;
+	position: relative;
+}
+.work08_01_box .sub_title_box .title_figure_small {
+	width: 18px; height: 18px; border-radius: 9px;
+	background-color: #c0c1cb;
+	position: absolute;	top: 52px; left: 238px;
+	z-index: 2;
+}
+.work08_01_box .sub_title_box .title_figure_middle {
+	width: 40px; height: 40px; border-radius: 20px;
+	border: 1px solid #c0c1cb;
+	position: absolute;	top: 65px; left: 335px;
+	z-index: 2;
+}
+.work08_01_box .sub_title_box .title_figure_big {
+	width: 100px; height: 100px; 
+	border-radius: 22px;
+	border: 1px solid #b0d4d9;
+	position: absolute; top: 10px; left: 250px;
+	transform: rotate(-17deg);
+	z-index: 1;
+}
+.work08_01_box .sub_title_box .sub_title02 {
+	display: inline-block;
+	margin-top: 80px;
+}
+.work08_01_main {
+	width: 960px;height: 650px;
+	background-size: 100%;
+	background-repeat: no-repeat;	
+	background-image: url(https://tistory4.daumcdn.net/tistory/1660029/skin/images/work_08_project_index.jpg);
+	margin-bottom: 100px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.4);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.work08_02_box {width: 49%;height: 690px;float: left;}
+.work08_02_box .sub_title_box {
+	width: 460px;height: 150px;
+	position: relative;
+}
+.work08_02_box .sub_title_box .title_figure_small {
+	width: 18px; height: 18px; border-radius: 9px;
+	background-color: #c0c1cb;
+	position: absolute;	top: 86px; left: 126px;
+	z-index: 2;
+}
+.work08_02_box .sub_title_box .title_figure_middle {
+	width: 40px; height: 40px; border-radius: 20px;
+	border: 1px solid #c0c1cb;
+	position: absolute;	top: 0px; left: 160px;
+	z-index: 2;
+}
+.work08_02_box .sub_title_box .title_figure_big {
+	width: 100px; height: 100px; 
+	border-radius: 22px;
+	border: 1px solid #b0d4d9;
+	position: absolute; top: 20px; left: 130px;
+	transform: rotate(-20deg);
+	z-index: 1;
+}
+.work08_02_box .sub_title_box .sub_title02 {
+	display: inline-block;
+	margin-top: 80px;
+}
+.work08_02_subpage1 {
+	width: 100%;height: 500px;
+	background-size: 100%;
+	background-repeat: no-repeat;	
+	background-image: url(https://tistory3.daumcdn.net/tistory/1660029/skin/images/work_08_project_sub01.jpg);
+	margin-bottom: 100px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.4);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.work08_03_box {
+	width: 49%;	height: 690px;
+	float: left;margin-left: 2%;
+}
+.work08_03_box .sub_title_box {
+	width: 460px;height: 150px;
+	position: relative;
+}
+.work08_03_box .sub_title_box .title_figure_small {
+	width: 18px; height: 18px; border-radius: 9px;
+	background-color: #c0c1cb;
+	position: absolute;	top: 27px; left: 243px;
+	z-index: 2;
+}
+.work08_03_box .sub_title_box .title_figure_middle {
+	width: 40px; height: 40px; border-radius: 20px;
+	border: 1px solid #c0c1cb;
+	position: absolute;	top: 90px; left: 303px;
+	z-index: 2;
+}
+.work08_03_box .sub_title_box .title_figure_big {
+	width: 100px; height: 100px; 
+	border-radius: 22px;
+	border: 1px solid #b0d4d9;
+	position: absolute; top: 25px; left: 235px;
+	transform: rotate(-27deg);
+	z-index: 1;
+}
+.work08_03_box .sub_title_box .sub_title02 {
+	display: inline-block;
+	margin-top: 80px;
+}
+.work08_03_subpage2 {
+	width: 100%;height: 500px;
+	background-size: 100%;
+	background-repeat: no-repeat;	
+	background-image: url(https://tistory4.daumcdn.net/tistory/1660029/skin/images/work_08_project_sub02.jpg);
+	margin-bottom: 100px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.4);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*------------lightbox-----------------*/
+.contents_box {	position: relative;}
+.contents_box > a,
+.contents_box > a img{display: block;}
+.contents_box > a span{
+	width: 100%;
+	position: absolute;
+	top: 0%; left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	color: white;
+	font-size: 24px;
+	line-height: 32px;
+	opacity: 0; 
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+	background: #4687a1;
+	-webkit-transition: opacity 0.3s linear;
+	-moz-transition: opacity 0.3s linear;
+	-o-transition: opacity 0.3s linear;
+	-ms-transition: opacity 0.3s linear;
+	transition: opacity 0.3s linear;
+}
+.work08_01_main > a span {padding: 277px 0;}
+.work08_02_subpage1 > a span {padding: 202px 0;}
+.work08_03_subpage2 > a span {padding: 202px 0;}
+.contents_box > a:hover span{
+	opacity: 0.75;
+	filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+}
+.lb-overlay{
+	width: 0px;	height: 0px;
+	position: fixed;
+	overflow:scroll;
+	left: 0px;	top: 0px;
+	padding: 0px;
+	z-index: 99;
+	text-align: center;
+	background: #fff;
+}
+.lb-overlay img {
+	clear:both;
+	margin:5px;
+}
+.lb-overlay a.lb-close{
+	z-index: 1001;
+	color:#4687a1;
+	position: absolute;
+	top: 43px;
+	left: 50%;
+	font-size: 36px;
+	line-height: 36px;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	margin-left: -25px;
+	opacity: 0;
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+	-webkit-transition: opacity 0.3s linear 1.2s;
+	-moz-transition: opacity 0.3s linear 1.2s;
+	-o-transition: opacity 0.3s linear 1.2s;
+	-ms-transition: opacity 0.3s linear 1.2s;
+	transition: opacity 0.3s linear 1.2s;
+}
+.lb-overlay img{
+	/* height: 100%; For Opera max-height does not seem to work */
+	width: 90%;
+	position: relative;
+	-webkit-box-shadow: 0px 2px 7px black;
+	-moz-box-shadow: 0px 2px 7px black;
+	box-shadow: 0px 2px 7px black;
+}
+.lb-overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 0px;
+	right: 0px;
+	padding: 80px 100px 120px 100px;
+}
+.lb-overlay:target img {
+	-webkit-animation: fadeInScale 1.2s ease-in-out;
+	-moz-animation: fadeInScale 1.2s ease-in-out;
+	-o-animation: fadeInScale 1.2s ease-in-out;
+	-ms-animation: fadeInScale 1.2s ease-in-out;
+	animation: fadeInScale 1.2s ease-in-out;
+}
+.lb-overlay:target a.lb-close,
+.lb-overlay:target > div{
+	opacity: 1;
+	filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+}
+@-webkit-keyframes fadeInScale {
+  0% { -webkit-transform: scale(0.6); opacity: 0; }
+  100% { -webkit-transform: scale(1); opacity: 1; }
+}
+@-moz-keyframes fadeInScale {
+  0% { -moz-transform: scale(0.6); opacity: 0; }
+  100% { -moz-transform: scale(1); opacity: 1; }
+}
+@-o-keyframes fadeInScale {
+  0% { -o-transform: scale(0.6); opacity: 0; }
+  100% { -o-transform: scale(1); opacity: 1; }
+}
+@-ms-keyframes fadeInScale {
+  0% { -ms-transform: scale(0.6); opacity: 0; }
+  100% { -ms-transform: scale(1); opacity: 1; }
+}
+@keyframes fadeInScale {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}

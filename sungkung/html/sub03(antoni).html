@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="../img/black_favicon.ico">
+    
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="../css/reset.css">
+    
+    <style>
+        .port_box {
+            width: 100%; height: 100vh; 
+            background-color: #cbb3a0;
+            position: relative;
+        }
+        ul {width: 27.5%; float: left; padding-left: 80px; padding-top: 157px;}
+        ul li {width: 100%; margin-bottom: 50px; position: relative;}
+        ul li img {width: 100%;}
+        ul li a span {
+            position: absolute; 
+            bottom: -10px; left: 0;
+            display: block;
+        }
+        ul li:nth-child(3) a span {width: 100%; height: 3px; background-color: #630808;}
+        .p_line {
+            display: block;
+            height: 3px;
+            width: 0;
+            position: absolute;
+            bottom: -10px; left: 0;
+            background-color: #630808;
+            transition: all 0.3s linear;   
+        }
+        ul li:nth-child(1) a:hover span.p_line {width: 80%; }
+        ul li:nth-child(2) a:hover span.p_line {width: 43.40909%;}
+        ul li:nth-child(4) a:hover span.p_line {width: 55.6818181%;}
+        ul li:nth-child(5) a:hover span.p_line {width: 69.31818185%;}
+        ul li:nth-child(6) a:hover span.p_line {width: 73.4090909%;}
+        ul li p {
+            width: 300px;
+            font-size: 18px;
+            color: #630808;
+            display: inline-block;
+            position: absolute;
+            top: 0; left: 102.0454545%;
+            z-index: 100;
+        }
+
+        .port_img {
+            width: 50%; height: 100%; float: right;
+            position: relative;
+        }
+        .img_box { 
+            width:81.6255%; height: 610px; 
+            overflow: hidden; margin-top: 94px;
+        }
+        .img_box img {
+            width: 100%;
+            animation-name: mainscreen;
+            animation-duration: 0.75s;
+        } 
+        @keyframes mainscreen {
+            0% {transform: scale(1.5,1.5)}
+            100% {transform: scale(1,1)}
+        }
+        .port_img span {
+            width: 3.75%; display: inline-block;
+            position: absolute;
+            top:30%; right: 6.625%;
+        }
+        .port_img>span img {width: 100%;}
+        
+        /* tablet*/
+        @media screen and (min-width:768px) and (max-width:991px) {
+            .port_box ul {display: none;}
+            .port_img { display: none;}
+        }
+        /*mobile*/
+        @media screen and (min-width:320px) and (max-width:767px) {
+            .port_box ul {display: none;}
+            .port_img>span {display: none;}
+        }
+        
+        /*partial detial for PC*/
+        @media screen and (min-width:1820px) and (max-width:1920px) {
+            .port_box ul {padding-top: 190px;}
+            .img_box {height: 700px;}
+        }
+        @media screen and (min-width:1300px) and (max-width:1400px) {
+            .port_img {width: 55%;}
+        }
+        @media screen and (min-width:1140px) and (max-width:1299px) {
+            .port_img {width: 60%;}
+        }
+        @media screen and (min-width:1190px) and (max-width:1139px) {
+            .port_img {width: 62%;}
+        }
+        @media screen and (min-width:1030px) and (max-width:1189px) {
+            .port_img {width: 65%;}
+        }
+        @media screen and (min-width:992px) and (max-width:1029px) {
+            .port_img {width: 66.5%;}
+        }
+        @media screen and (min-width:992px) and (max-width:1299px) {
+            .port_box ul {padding-top: 250px; padding-left: 40px;}
+            .port_box ul li {margin-bottom: 25px;}
+        }
+            
+            
+    </style>
+</head>
+<body>
+    <div class="port_box">
+        <ul>
+            <li><a href="sub01(matetour).html"><img src="../img/txt_gaudi01.png"><span class="p_line"></span></a></li>
+            <li><a href="sub02(wwf).html"><img src="../img/txt_gaudi02.png" alt="wwf"><span class="p_line"></span></a></li>
+            <li><a href="sub03(antoni).html"><img src="../img/txt_gaudi03..png" alt="antonigaudi"><span></span></a><p>-UI/UX &amp; Responsive web</p></li>
+            <li><a href="sub04(perpared).html"><img src="../img/txt_gaudi04_03.png" alt="copied"><span class="p_line"></span></a></li>
+            <li><a href="sub05(portfolio).html"><img src="../img/txt_gaudi05.png" alt="portfolio"><span class="p_line"></span></a></li>
+            <li><a href="sub06(graphics).html"><img src="../img/txt_gaudi06.png" alt="graphics"><span class="p_line"></span></a></li>
+        </ul>
+        <div class="port_img">
+            <div class="tablet_title"></div>
+            <div class="img_box">
+                <a href="detail03(antoni).html"  target="_parent"><img src="../img/antoni_03.jpg" alt="go to detial"></a>
+            </div>
+            <span><img src="../img/txt_gaudi07.png" alt="selected project"></span>
+        </div>
+    </div>
+</body>
+</html>
