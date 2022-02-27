@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Redesign</title>
+	<!--css링크-->
+	<link rel="stylesheet" href="../css/07_redesign_style.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<!--파비콘 링크-->
+	<link rel="shortcut icon" href="../img/pb_icon.ico"> 
+	<!--제이쿼리링크-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<!--폰트링크-->
+	<link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<ul>
+			<li><a href="../html/02_illust.html">Illust</a></li>
+			<li><a href="../html/03_banner.html">Banner</a></li>
+			<li><a href="../html/04_event.html">Event</a></li>
+			<li><a href="../html/05_webmail.html">Web mail</a></li>
+			<li><a href="../index.html">June-Sep</a></li>
+			<li><a href="../html/06_promotion.html">Promotion</a></li>
+			<li><a href="../html/08_codign.html">Coding</a></li>
+			<li><a href="../html/07_redesign.html">Redesign</a></li>
+			<li><a href="../html/09_project.html">Project</a></li>
+		</ul>		
+	</div>
+	<!--//header-->
+	<div id="section">
+		<div class="title">
+			<ul class="first_t">
+				<li>R</li>
+				<li>D</li>
+				<li>S</li>
+				<li>G</li>
+			</ul>
+			<ul class="secont_t">
+				<li>E</li>
+				<li>E</li>
+				<li>I</li>
+				<li>N</li>
+			</ul>
+		</div>
+		<div class="s_txt">
+			<div>
+				설화수 리디자인 <span class="big_txt">반응형</span> 사이트입니다.<br>
+				간단했던 기존의 설화수 페이지를 화려한 설화수 제품에 맞게 리디자인 하였습니다.<br>
+				반응형이며 PC, 노트북 769px~1320px, 태블릿 361px~768px, 모바일 360px 사이즈로 제작하였습니다.<br>
+				타이틀 뒤에 배경은 background-attachment를 사용하여 고정된 상태로 내려오게 제작하였습니다.
+			</div>
+		</div>
+		<div class="top_b">
+			<a href="#header" class="top_button"><span class="ir">화살표</span></a>
+		</div>
+	</div>
+	<!--//section-->
+	<div id="nav">
+		<a href="http://kimyj8807.dothome.co.kr/sulwha" target="blank">http://kimyj8807.dothome.co.kr/sulwha</a>
+			<div class="n_box01">
+            	<div class="pf_box pf_box01">
+					<a href="#image-1"><img src="../img/redesign_03.jpg" width="565" height="813" class="spc_01"><span>Redesign PC</span></a>
+					<div class="lb-overlay" id="image-1">
+						<a href="#page" class="lb-close">X</a>
+						<div>
+							<h3>Redesign Sulwhasoo</h3>
+							<h3>PC</h3>
+						</div>                        
+						<img src="../img/sulwha_pc.jpg" alt="" width="966" height="3500">                        
+					</div>                    
+                </div>   
+            	<div class="pf_box pf_box02">
+					<a href="#image-2"><img src="../img/redesign_05.jpg" width="346" height="813" class="spc_01"><span>Redesign Tablet</span></a>
+					<div class="lb-overlay" id="image-2">
+						<a href="#page" class="lb-close">X</a>
+						<div>
+							<h3>Redesign Sulwhasoo</h3>
+							<h3>Tablet</h3>
+						</div>                        
+						<img src="../img/sulwha_tablet.jpg" alt="" width="625" height="3700">                        
+					</div>                    
+                </div>  
+            	<div class="pf_box pf_box03">
+					<a href="#image-3"><img src="../img/redesign_07.jpg" width="117" height="813" class="spc_01">
+						<span>Mobile</span></a>
+					<div class="lb-overlay" id="image-3">
+						<a href="#page" class="lb-close">X</a>
+						<div>
+							<h3>Redesign Sulwhasoo</h3>
+							<h3>Mobile</h3>
+						</div>                        
+						<img src="../img/sulwha_mobile.jpg" alt="" width="360" height="2500">                        
+					</div>                    
+                </div>    
+			<!--
+			<div class="a1"><a href="#"><p>PC</p></a></div>
+			<div class="a2"><a href="#"><p>태블릿</p></a></div>
+			<div class="a3"><a href="#"><p>모바일</p></a></div>
+		-->
+		</div>
+		<div class="n_box05">
+			<div class="a4"><span class="ir">목업01</span></div>
+			<div class="a5"><span class="ir">목업02</span></div>
+		</div>
+	</div>
+	<!--nav-->
+	<div id="footer">
+		<div>Copyright&copy; 2018 Yu-jeong. All Rights Reserved</div>
+	</div>
+	<!--//footer-->
+</div>	
+<script type="text/javascript"> 
+ $(document).ready(function() { 
+    $("a.top_button").anchorAnimate() 
+ }); 
+ jQuery.fn.anchorAnimate = function(settings) { 
+    settings = jQuery.extend({ 
+    speed : 300 
+    }, settings);     
+    return this.each(function(){ 
+    var caller = this 
+    $(caller).click(function (event) {     
+    event.preventDefault() 
+    var locationHref = window.location.href 
+    var elementClick = $(caller).attr("href") 
+    var destination = $(elementClick).offset().top; 
+    $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function()  
+    { 
+    window.location.hash = elementClick 
+    }); 
+     return false; 
+    }) 
+    }) 
+ } 
+</script> 
+<script src="js/js1.js"></script>
+</body>
+</html>

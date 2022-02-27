@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Event</title>
+	<!--css링크-->
+	<link rel="stylesheet" href="../css/04_event_style.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<!--파비콘 링크-->
+	<link rel="shortcut icon" href="../img/pb_icon.ico"> 
+	<!--제이쿼리링크-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--폰트링크-->
+	<link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<ul>
+			<li><a href="../html/02_illust.html">Illust</a></li>
+			<li><a href="../html/03_banner.html">Banner</a></li>
+			<li><a href="../html/04_event.html">Event</a></li>
+			<li><a href="../html/05_webmail.html">Web mail</a></li>
+			<li><a href="../index.html">June-Sep</a></li>
+			<li><a href="../html/06_promotion.html">Promotion</a></li>
+			<li><a href="../html/08_codign.html">Coding</a></li>
+			<li><a href="../html/07_redesign.html">Redesign</a></li>
+			<li><a href="../html/09_project.html">Project</a></li>
+		</ul>	
+	</div>
+	<!--//header-->
+	<div id="section">
+		<div class="title">
+			<ul class="first_t">
+				<li>E</li>
+				<li>E</li>
+				<li>T</li>
+			</ul>
+			<ul class="secont_t">
+				<li>V</li>
+				<li>N</li>
+			</ul>
+		</div>
+		<div class="s_txt">
+			<div>
+				에버랜드 이벤트 페이지입니다.<br>
+				에버랜드 사파리의 이미지와 맞게 동물을 넣었고<br>
+				아이들을 대상으로 한 이벤트이기 때문에 일러스트를<br>
+				사용해 귀여운 느낌으로 디자인하였습니다.<br>
+			</div>
+		</div>
+		<div class="top_b">
+			<a href="#header" class="top_button"><span class="ir">화살표</span></a>
+		</div>
+	</div>
+	<!--//section-->
+	<div id="nav">
+		<div class="n01"><span class="ir">이벤트이미지</span></div>
+	</div>
+	<!--nav-->
+	<div id="footer">
+		<div>Copyright&copy; 2018 Yu-jeong. All Rights Reserved</div>
+	</div>
+	<!--//footer-->
+</div>	
+<script type="text/javascript"> 
+ $(document).ready(function() { 
+    $("a.top_button").anchorAnimate() 
+ }); 
+ jQuery.fn.anchorAnimate = function(settings) { 
+    settings = jQuery.extend({ 
+    speed : 300 
+    }, settings);     
+    return this.each(function(){ 
+    var caller = this 
+    $(caller).click(function (event) {     
+    event.preventDefault() 
+    var locationHref = window.location.href 
+    var elementClick = $(caller).attr("href") 
+    var destination = $(elementClick).offset().top; 
+    $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function()  
+    { 
+    window.location.hash = elementClick 
+    }); 
+     return false; 
+    }) 
+    }) 
+ } 
+</script> 
+</body>
+</html>
